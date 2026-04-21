@@ -1,3 +1,22 @@
 theme: jekyll-theme-minimal
 title: Octocat's homepage
 description: Bookmark this to keep an eye on my project updates!
+
+            - name: HTML Preview
+  # You may pin to the exact commit or the version.
+  # uses: pavi2410/html-preview-action@b58683c238478d5f8b5dacf4fe5e3f403afb449a
+  uses: pavi2410/html-preview-action@v5
+  with:
+    # Upload behavior; auto uses a raw upload for a single discovered file and falls back to an archive for multi-file previews
+    upload: # optional, default is auto
+    # The entry HTML file to preview, relative to site_root
+    html_file: # default is index.html
+    # The root directory used for resolving the entry HTML file and related assets/pages
+    site_root: # optional, default is .
+    # Optional artifact name override for archived uploads; ignored for single-file raw uploads
+    archive_name: # optional
+    # Artifact retention in days, or 0 to use the repository default
+    retention_days: # optional, default is 0
+    # Prints a job summary with the link
+    job_summary: # optional, default is true
+          
