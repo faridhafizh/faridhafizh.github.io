@@ -22,7 +22,7 @@
     </script>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Inter', sans-serif; background: #0a0a0a; color: #ffffff; overflow-x: hidden; }
+        body { font-family: '-apple-system', 'BlinkMacSystemFont', sans-serif; background: #f5f5f7; color: #1d1d1f; overflow-x: hidden; }
         .font-syne { font-family: 'Syne', sans-serif; }
 
         @keyframes fadeInUpBlur {
@@ -53,8 +53,8 @@
         .marquee-track:hover { animation-play-state: paused; }
 
         @keyframes pulse-glow {
-            0%, 100% { box-shadow: 0 0 10px rgba(239,68,68,0.2); }
-            50% { box-shadow: 0 0 25px rgba(239,68,68,0.4); }
+            0%, 100% { box-shadow: 0 0 10px rgba(0,102,204,0.2); }
+            50% { box-shadow: 0 0 25px rgba(0,102,204,0.4); }
         }
         .pulse-glow { animation: pulse-glow 3s ease-in-out infinite; }
 
@@ -84,17 +84,17 @@
         .skill-bar-fill.active { /* width set inline */ }
 
         .timeline-line {
-            background: linear-gradient(to bottom, #ef4444, rgba(239,68,68,0.1));
+            background: linear-gradient(to bottom, #0066cc, rgba(0,102,204,0.1));
         }
 
         html { scroll-behavior: smooth; }
 
         ::-webkit-scrollbar { width: 6px; }
-        ::-webkit-scrollbar-track { background: #0a0a0a; }
+        ::-webkit-scrollbar-track { background: #f5f5f7; }
         ::-webkit-scrollbar-thumb { background: #333; border-radius: 3px; }
-        ::-webkit-scrollbar-thumb:hover { background: #ef4444; }
+        ::-webkit-scrollbar-thumb:hover { background: #0066cc; }
 
-        .nav-active { color: #ef4444 !important; }
+        .nav-active { color: #0066cc !important; }
 
         .card-hover {
             transition: all 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
@@ -117,8 +117,8 @@
 
     <!-- Ambient Background Glow -->
     <div class="fixed inset-0 z-[-10] overflow-hidden">
-        <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-red-500/5 rounded-full blur-[120px]"></div>
-        <div class="absolute bottom-1/4 right-1/4 w-80 h-80 bg-red-500/3 rounded-full blur-[100px]"></div>
+        <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-[#0066cc]/5 rounded-full blur-[120px]"></div>
+        <div class="absolute bottom-1/4 right-1/4 w-80 h-80 bg-[#0066cc]/3 rounded-full blur-[100px]"></div>
     </div>
 
     <!-- Navigation -->
@@ -126,30 +126,30 @@
         <div class="max-w-7xl mx-auto px-6 md:px-8">
             <div class="flex items-center justify-between py-5">
                 <a href="#hero" class="font-syne font-bold text-lg tracking-tight group">
-                    <span class="text-red-500">M</span>FH<span class="text-red-500">.</span>
+                    <span class="text-[#0066cc]">M</span>FH<span class="text-[#0066cc]">.</span>
                 </a>
                 <div class="hidden md:flex items-center gap-8">
-                    <a href="#about" class="nav-link text-xs uppercase tracking-widest text-neutral-400 hover:text-white transition-colors duration-300">Tentang</a>
-                    <a href="#skills" class="nav-link text-xs uppercase tracking-widest text-neutral-400 hover:text-white transition-colors duration-300">Keahlian</a>
-                    <a href="#experience" class="nav-link text-xs uppercase tracking-widest text-neutral-400 hover:text-white transition-colors duration-300">Pengalaman</a>
-                    <a href="#certifications" class="nav-link text-xs uppercase tracking-widest text-neutral-400 hover:text-white transition-colors duration-300">Sertifikasi</a>
-                    <a href="#education" class="nav-link text-xs uppercase tracking-widest text-neutral-400 hover:text-white transition-colors duration-300">Pendidikan</a>
-                    <a href="#contact" class="px-5 py-2.5 border border-white/10 text-xs uppercase tracking-widest hover:bg-white hover:text-black transition-all duration-300 font-medium">Kontak</a>
+                    <a href="#about" class="nav-link text-xs uppercase tracking-widest text-[#515154] hover:text-black transition-colors duration-300">Tentang</a>
+                    <a href="#skills" class="nav-link text-xs uppercase tracking-widest text-[#515154] hover:text-black transition-colors duration-300">Keahlian</a>
+                    <a href="#experience" class="nav-link text-xs uppercase tracking-widest text-[#515154] hover:text-black transition-colors duration-300">Pengalaman</a>
+                    <a href="#certifications" class="nav-link text-xs uppercase tracking-widest text-[#515154] hover:text-black transition-colors duration-300">Sertifikasi</a>
+                    <a href="#education" class="nav-link text-xs uppercase tracking-widest text-[#515154] hover:text-black transition-colors duration-300">Pendidikan</a>
+                    <a href="#contact" class="px-5 py-2.5 border border-black/10 text-xs uppercase tracking-widest hover:bg-white hover:text-black transition-all duration-300 font-medium">Kontak</a>
                 </div>
-                <button id="mobile-menu-btn" class="md:hidden text-white">
+                <button id="mobile-menu-btn" class="md:hidden text-black">
                     <span class="iconify" data-icon="mdi:menu" data-width="24"></span>
                 </button>
             </div>
         </div>
         <!-- Mobile Menu -->
-        <div id="mobile-menu" class="md:hidden hidden bg-neutral-950/95 backdrop-blur-sm border-t border-white/5">
+        <div id="mobile-menu" class="md:hidden hidden bg-white/80 backdrop-blur-sm border-t bg-white rounded-2xl shadow-sm border border-black/5">
             <div class="px-6 py-6 flex flex-col gap-4">
-                <a href="#about" class="mobile-nav text-xs uppercase tracking-widest text-neutral-400 hover:text-white transition-colors py-2">Tentang</a>
-                <a href="#skills" class="mobile-nav text-xs uppercase tracking-widest text-neutral-400 hover:text-white transition-colors py-2">Keahlian</a>
-                <a href="#experience" class="mobile-nav text-xs uppercase tracking-widest text-neutral-400 hover:text-white transition-colors py-2">Pengalaman</a>
-                <a href="#certifications" class="mobile-nav text-xs uppercase tracking-widest text-neutral-400 hover:text-white transition-colors py-2">Sertifikasi</a>
-                <a href="#education" class="mobile-nav text-xs uppercase tracking-widest text-neutral-400 hover:text-white transition-colors py-2">Pendidikan</a>
-                <a href="#contact" class="mobile-nav px-5 py-2.5 border border-white/10 text-xs uppercase tracking-widest hover:bg-white hover:text-black transition-all duration-300 font-medium text-center mt-2">Kontak</a>
+                <a href="#about" class="mobile-nav text-xs uppercase tracking-widest text-[#515154] hover:text-black transition-colors py-2">Tentang</a>
+                <a href="#skills" class="mobile-nav text-xs uppercase tracking-widest text-[#515154] hover:text-black transition-colors py-2">Keahlian</a>
+                <a href="#experience" class="mobile-nav text-xs uppercase tracking-widest text-[#515154] hover:text-black transition-colors py-2">Pengalaman</a>
+                <a href="#certifications" class="mobile-nav text-xs uppercase tracking-widest text-[#515154] hover:text-black transition-colors py-2">Sertifikasi</a>
+                <a href="#education" class="mobile-nav text-xs uppercase tracking-widest text-[#515154] hover:text-black transition-colors py-2">Pendidikan</a>
+                <a href="#contact" class="mobile-nav px-5 py-2.5 border border-black/10 text-xs uppercase tracking-widest hover:bg-white hover:text-black transition-all duration-300 font-medium text-center mt-2">Kontak</a>
             </div>
         </div>
     </nav>
@@ -161,32 +161,32 @@
 
         <!-- Beam Lines -->
         <div class="absolute top-0 left-[20%] w-px h-full overflow-hidden opacity-20">
-            <div class="w-full h-20 bg-gradient-to-b from-transparent via-red-500 to-transparent beam"></div>
+            <div class="w-full h-20 bg-gradient-to-b from-transparent via-[#0066cc] to-transparent beam"></div>
         </div>
         <div class="absolute top-0 left-[50%] w-px h-full overflow-hidden opacity-10">
-            <div class="w-full h-20 bg-gradient-to-b from-transparent via-red-500 to-transparent beam" style="animation-delay: 2s;"></div>
+            <div class="w-full h-20 bg-gradient-to-b from-transparent via-[#0066cc] to-transparent beam" style="animation-delay: 2s;"></div>
         </div>
         <div class="absolute top-0 left-[80%] w-px h-full overflow-hidden opacity-15">
-            <div class="w-full h-20 bg-gradient-to-b from-transparent via-red-500 to-transparent beam" style="animation-delay: 3.5s;"></div>
+            <div class="w-full h-20 bg-gradient-to-b from-transparent via-[#0066cc] to-transparent beam" style="animation-delay: 3.5s;"></div>
         </div>
 
         <div class="relative z-10 flex-1 flex flex-col justify-center px-6 md:px-12 lg:px-20 max-w-7xl mx-auto w-full">
             <div class="animate-entry delay-1">
-                <p class="text-xs uppercase tracking-[0.3em] text-neutral-500 mb-6 flex items-center gap-3">
-                    <span class="w-8 h-px bg-red-500"></span>
+                <p class="text-xs uppercase tracking-[0.3em] text-[#86868b] mb-6 flex items-center gap-3">
+                    <span class="w-8 h-px bg-[#0066cc]"></span>
                     Network & IT Professional
                 </p>
             </div>
             <h1 class="font-syne font-medium tracking-tighter leading-[0.9] animate-entry delay-2">
                 <span class="block text-4xl sm:text-5xl md:text-7xl lg:text-8xl">Muhammad</span>
-                <span class="block text-4xl sm:text-5xl md:text-7xl lg:text-8xl">Farid<span class="text-red-500">.</span></span>
-                <span class="block text-4xl sm:text-5xl md:text-7xl lg:text-8xl text-neutral-500">Hafizh</span>
+                <span class="block text-4xl sm:text-5xl md:text-7xl lg:text-8xl">Farid<span class="text-[#0066cc]">.</span></span>
+                <span class="block text-4xl sm:text-5xl md:text-7xl lg:text-8xl text-[#86868b]">Hafizh</span>
             </h1>
             <div class="mt-8 md:mt-12 flex flex-col sm:flex-row gap-4 sm:gap-8 items-start animate-entry delay-3">
-                <p class="text-neutral-400 text-sm md:text-base leading-relaxed max-w-md">
+                <p class="text-[#515154] text-sm md:text-base leading-relaxed max-w-md">
                     Spesialis jaringan & infrastruktur IT dengan sertifikasi BNSP. Siap membantu kebutuhan teknologi Anda secara profesional.
                 </p>
-                <a href="#contact" class="group px-7 py-4 border border-white/10 text-xs uppercase tracking-widest hover:bg-white hover:text-black transition-all duration-300 font-medium flex items-center gap-3 whitespace-nowrap">
+                <a href="#contact" class="group px-7 py-4 border border-black/10 text-xs uppercase tracking-widest hover:bg-white hover:text-black transition-all duration-300 font-medium flex items-center gap-3 whitespace-nowrap">
                     Hubungi Saya
                     <span class="iconify group-hover:translate-x-1 transition-transform" data-icon="mdi:arrow-right" data-width="16"></span>
                 </a>
@@ -194,31 +194,31 @@
         </div>
 
         <!-- Bottom Stats -->
-        <div class="relative z-10 border-t border-white/10 animate-entry delay-5">
+        <div class="relative z-10 border-t border-black/10 animate-entry delay-5">
             <div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-20 grid grid-cols-2 md:grid-cols-4 divide-x divide-white/10">
                 <div class="py-6 md:py-8 px-4 md:px-6">
-                    <p class="font-syne text-2xl md:text-3xl font-medium text-red-500">3.51</p>
-                    <p class="text-xs text-neutral-500 uppercase tracking-widest mt-1">IPK Cum Laude</p>
+                    <p class="font-syne text-2xl md:text-3xl font-medium text-[#0066cc]">3.51</p>
+                    <p class="text-xs text-[#86868b] uppercase tracking-widest mt-1">IPK Cum Laude</p>
                 </div>
                 <div class="py-6 md:py-8 px-4 md:px-6">
                     <p class="font-syne text-2xl md:text-3xl font-medium">4</p>
-                    <p class="text-xs text-neutral-500 uppercase tracking-widest mt-1">Sertifikasi BNSP</p>
+                    <p class="text-xs text-[#86868b] uppercase tracking-widest mt-1">Sertifikasi BNSP</p>
                 </div>
                 <div class="py-6 md:py-8 px-4 md:px-6">
                     <p class="font-syne text-2xl md:text-3xl font-medium">3+</p>
-                    <p class="text-xs text-neutral-500 uppercase tracking-widest mt-1">Pengalaman Magang</p>
+                    <p class="text-xs text-[#86868b] uppercase tracking-widest mt-1">Pengalaman Magang</p>
                 </div>
                 <div class="py-6 md:py-8 px-4 md:px-6">
                     <p class="font-syne text-2xl md:text-3xl font-medium">5+</p>
-                    <p class="text-xs text-neutral-500 uppercase tracking-widest mt-1">Proyek IT</p>
+                    <p class="text-xs text-[#86868b] uppercase tracking-widest mt-1">Proyek IT</p>
                 </div>
             </div>
         </div>
 
         <!-- Scroll Indicator -->
         <div class="absolute bottom-24 md:bottom-8 right-6 md:right-12 flex flex-col items-center gap-2 animate-entry delay-6">
-            <div class="w-5 h-8 border border-white/20 rounded-full flex justify-center pt-1.5">
-                <div class="w-1 h-2 bg-red-500 rounded-full animate-bounce"></div>
+            <div class="w-5 h-8 border bg-white rounded-2xl shadow-sm border border-black/10 rounded-full flex justify-center pt-1.5">
+                <div class="w-1 h-2 bg-[#0066cc] rounded-full animate-bounce"></div>
             </div>
         </div>
     </section>
@@ -228,23 +228,23 @@
         <div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-12">
                 <div class="md:col-span-1">
-                    <p class="text-xs uppercase tracking-[0.3em] text-neutral-500 flex items-center gap-3 sticky top-24">
-                        <span class="w-8 h-px bg-red-500"></span>
+                    <p class="text-xs uppercase tracking-[0.3em] text-[#86868b] flex items-center gap-3 sticky top-24">
+                        <span class="w-8 h-px bg-[#0066cc]"></span>
                         Tentang Saya
                     </p>
                 </div>
                 <div class="md:col-span-3">
                     <h2 class="font-syne text-3xl md:text-5xl font-medium tracking-tight mb-8 leading-tight scroll-animate">
-                        Membangun infrastruktur <span class="text-red-500">jaringan</span> yang andal & <span class="text-red-500">solusi IT</span> yang efektif
+                        Membangun infrastruktur <span class="text-[#0066cc]">jaringan</span> yang andal & <span class="text-[#0066cc]">solusi IT</span> yang efektif
                     </h2>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
                         <div class="scroll-animate">
-                            <p class="text-neutral-300 text-sm md:text-base leading-relaxed">
-                                Lulusan D4 Teknik Informatika – Prodi Teknologi Rekayasa Komputer Jaringan dengan IPK 3.51 <span class="text-red-500 font-medium">(Cum Laude)</span>. Terampil dalam instalasi, troubleshooting, dan konfigurasi jaringan menggunakan Mikrotik maupun Cisco.
+                            <p class="text-[#1d1d1f] text-sm md:text-base leading-relaxed">
+                                Lulusan D4 Teknik Informatika – Prodi Teknologi Rekayasa Komputer Jaringan dengan IPK 3.51 <span class="text-[#0066cc] font-medium">(Cum Laude)</span>. Terampil dalam instalasi, troubleshooting, dan konfigurasi jaringan menggunakan Mikrotik maupun Cisco.
                             </p>
                         </div>
                         <div class="scroll-animate">
-                            <p class="text-neutral-300 text-sm md:text-base leading-relaxed">
+                            <p class="text-[#1d1d1f] text-sm md:text-base leading-relaxed">
                                 Berpengalaman dalam pengelolaan server Linux dan Windows, pengembangan aplikasi berbasis Python, HTML, CSS, JavaScript, serta implementasi teknologi IoT. Memiliki sertifikasi resmi BNSP dan pengalaman langsung dalam proyek pemasangan CCTV, instalasi jaringan wired (UTP/Fiber) maupun wireless.
                             </p>
                         </div>
@@ -252,20 +252,20 @@
 
                     <!-- Quick Info Cards -->
                     <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-12">
-                        <div class="border border-white/5 p-6 card-hover scroll-animate">
-                            <span class="iconify text-red-500 mb-3" data-icon="mdi:map-marker-outline" data-width="24"></span>
-                            <p class="text-xs text-neutral-500 uppercase tracking-widest mb-1">Lokasi</p>
-                            <p class="text-sm text-neutral-300">Tanah Laut, Kalimantan Selatan</p>
+                        <div class="border bg-white rounded-2xl shadow-sm border border-black/5 p-6 card-hover scroll-animate">
+                            <span class="iconify text-[#0066cc] mb-3" data-icon="mdi:map-marker-outline" data-width="24"></span>
+                            <p class="text-xs text-[#86868b] uppercase tracking-widest mb-1">Lokasi</p>
+                            <p class="text-sm text-[#1d1d1f]">Tanah Laut, Kalimantan Selatan</p>
                         </div>
-                        <div class="border border-white/5 p-6 card-hover scroll-animate">
-                            <span class="iconify text-red-500 mb-3" data-icon="mdi:school-outline" data-width="24"></span>
-                            <p class="text-xs text-neutral-500 uppercase tracking-widest mb-1">Pendidikan</p>
-                            <p class="text-sm text-neutral-300">D4 Teknik Informatika</p>
+                        <div class="border bg-white rounded-2xl shadow-sm border border-black/5 p-6 card-hover scroll-animate">
+                            <span class="iconify text-[#0066cc] mb-3" data-icon="mdi:school-outline" data-width="24"></span>
+                            <p class="text-xs text-[#86868b] uppercase tracking-widest mb-1">Pendidikan</p>
+                            <p class="text-sm text-[#1d1d1f]">D4 Teknik Informatika</p>
                         </div>
-                        <div class="border border-white/5 p-6 card-hover scroll-animate">
-                            <span class="iconify text-red-500 mb-3" data-icon="mdi:certificate-outline" data-width="24"></span>
-                            <p class="text-xs text-neutral-500 uppercase tracking-widest mb-1">Sertifikasi</p>
-                            <p class="text-sm text-neutral-300">4× BNSP Certified</p>
+                        <div class="border bg-white rounded-2xl shadow-sm border border-black/5 p-6 card-hover scroll-animate">
+                            <span class="iconify text-[#0066cc] mb-3" data-icon="mdi:certificate-outline" data-width="24"></span>
+                            <p class="text-xs text-[#86868b] uppercase tracking-widest mb-1">Sertifikasi</p>
+                            <p class="text-sm text-[#1d1d1f]">4× BNSP Certified</p>
                         </div>
                     </div>
                 </div>
@@ -274,61 +274,61 @@
     </section>
 
     <!-- Skills Marquee -->
-    <section class="py-8 border-y border-white/5 overflow-hidden">
+    <section class="py-8 border-y border-black/5 bg-white overflow-hidden">
         <div class="marquee-track flex items-center gap-8 whitespace-nowrap">
-            <span class="text-neutral-600 text-sm uppercase tracking-widest">Mikrotik</span>
-            <span class="text-red-500 text-xs">◆</span>
-            <span class="text-neutral-600 text-sm uppercase tracking-widest">Cisco</span>
-            <span class="text-red-500 text-xs">◆</span>
-            <span class="text-neutral-600 text-sm uppercase tracking-widest">Python</span>
-            <span class="text-red-500 text-xs">◆</span>
-            <span class="text-neutral-600 text-sm uppercase tracking-widest">JavaScript</span>
-            <span class="text-red-500 text-xs">◆</span>
-            <span class="text-neutral-600 text-sm uppercase tracking-widest">HTML & CSS</span>
-            <span class="text-red-500 text-xs">◆</span>
-            <span class="text-neutral-600 text-sm uppercase tracking-widest">Linux Server</span>
-            <span class="text-red-500 text-xs">◆</span>
-            <span class="text-neutral-600 text-sm uppercase tracking-widest">Windows Server</span>
-            <span class="text-red-500 text-xs">◆</span>
-            <span class="text-neutral-600 text-sm uppercase tracking-widest">Proxmox</span>
-            <span class="text-red-500 text-xs">◆</span>
-            <span class="text-neutral-600 text-sm uppercase tracking-widest">Nextcloud</span>
-            <span class="text-red-500 text-xs">◆</span>
-            <span class="text-neutral-600 text-sm uppercase tracking-widest">IoT Integration</span>
-            <span class="text-red-500 text-xs">◆</span>
-            <span class="text-neutral-600 text-sm uppercase tracking-widest">Fiber Optic</span>
-            <span class="text-red-500 text-xs">◆</span>
-            <span class="text-neutral-600 text-sm uppercase tracking-widest">CCTV Installation</span>
-            <span class="text-red-500 text-xs">◆</span>
-            <span class="text-neutral-600 text-sm uppercase tracking-widest">Load Balancing</span>
-            <span class="text-red-500 text-xs">◆</span>
+            <span class="text-[#86868b] text-sm uppercase tracking-widest">Mikrotik</span>
+            <span class="text-[#0066cc] text-xs">◆</span>
+            <span class="text-[#86868b] text-sm uppercase tracking-widest">Cisco</span>
+            <span class="text-[#0066cc] text-xs">◆</span>
+            <span class="text-[#86868b] text-sm uppercase tracking-widest">Python</span>
+            <span class="text-[#0066cc] text-xs">◆</span>
+            <span class="text-[#86868b] text-sm uppercase tracking-widest">JavaScript</span>
+            <span class="text-[#0066cc] text-xs">◆</span>
+            <span class="text-[#86868b] text-sm uppercase tracking-widest">HTML & CSS</span>
+            <span class="text-[#0066cc] text-xs">◆</span>
+            <span class="text-[#86868b] text-sm uppercase tracking-widest">Linux Server</span>
+            <span class="text-[#0066cc] text-xs">◆</span>
+            <span class="text-[#86868b] text-sm uppercase tracking-widest">Windows Server</span>
+            <span class="text-[#0066cc] text-xs">◆</span>
+            <span class="text-[#86868b] text-sm uppercase tracking-widest">Proxmox</span>
+            <span class="text-[#0066cc] text-xs">◆</span>
+            <span class="text-[#86868b] text-sm uppercase tracking-widest">Nextcloud</span>
+            <span class="text-[#0066cc] text-xs">◆</span>
+            <span class="text-[#86868b] text-sm uppercase tracking-widest">IoT Integration</span>
+            <span class="text-[#0066cc] text-xs">◆</span>
+            <span class="text-[#86868b] text-sm uppercase tracking-widest">Fiber Optic</span>
+            <span class="text-[#0066cc] text-xs">◆</span>
+            <span class="text-[#86868b] text-sm uppercase tracking-widest">CCTV Installation</span>
+            <span class="text-[#0066cc] text-xs">◆</span>
+            <span class="text-[#86868b] text-sm uppercase tracking-widest">Load Balancing</span>
+            <span class="text-[#0066cc] text-xs">◆</span>
             <!-- Duplicate for seamless loop -->
-            <span class="text-neutral-600 text-sm uppercase tracking-widest">Mikrotik</span>
-            <span class="text-red-500 text-xs">◆</span>
-            <span class="text-neutral-600 text-sm uppercase tracking-widest">Cisco</span>
-            <span class="text-red-500 text-xs">◆</span>
-            <span class="text-neutral-600 text-sm uppercase tracking-widest">Python</span>
-            <span class="text-red-500 text-xs">◆</span>
-            <span class="text-neutral-600 text-sm uppercase tracking-widest">JavaScript</span>
-            <span class="text-red-500 text-xs">◆</span>
-            <span class="text-neutral-600 text-sm uppercase tracking-widest">HTML & CSS</span>
-            <span class="text-red-500 text-xs">◆</span>
-            <span class="text-neutral-600 text-sm uppercase tracking-widest">Linux Server</span>
-            <span class="text-red-500 text-xs">◆</span>
-            <span class="text-neutral-600 text-sm uppercase tracking-widest">Windows Server</span>
-            <span class="text-red-500 text-xs">◆</span>
-            <span class="text-neutral-600 text-sm uppercase tracking-widest">Proxmox</span>
-            <span class="text-red-500 text-xs">◆</span>
-            <span class="text-neutral-600 text-sm uppercase tracking-widest">Nextcloud</span>
-            <span class="text-red-500 text-xs">◆</span>
-            <span class="text-neutral-600 text-sm uppercase tracking-widest">IoT Integration</span>
-            <span class="text-red-500 text-xs">◆</span>
-            <span class="text-neutral-600 text-sm uppercase tracking-widest">Fiber Optic</span>
-            <span class="text-red-500 text-xs">◆</span>
-            <span class="text-neutral-600 text-sm uppercase tracking-widest">CCTV Installation</span>
-            <span class="text-red-500 text-xs">◆</span>
-            <span class="text-neutral-600 text-sm uppercase tracking-widest">Load Balancing</span>
-            <span class="text-red-500 text-xs">◆</span>
+            <span class="text-[#86868b] text-sm uppercase tracking-widest">Mikrotik</span>
+            <span class="text-[#0066cc] text-xs">◆</span>
+            <span class="text-[#86868b] text-sm uppercase tracking-widest">Cisco</span>
+            <span class="text-[#0066cc] text-xs">◆</span>
+            <span class="text-[#86868b] text-sm uppercase tracking-widest">Python</span>
+            <span class="text-[#0066cc] text-xs">◆</span>
+            <span class="text-[#86868b] text-sm uppercase tracking-widest">JavaScript</span>
+            <span class="text-[#0066cc] text-xs">◆</span>
+            <span class="text-[#86868b] text-sm uppercase tracking-widest">HTML & CSS</span>
+            <span class="text-[#0066cc] text-xs">◆</span>
+            <span class="text-[#86868b] text-sm uppercase tracking-widest">Linux Server</span>
+            <span class="text-[#0066cc] text-xs">◆</span>
+            <span class="text-[#86868b] text-sm uppercase tracking-widest">Windows Server</span>
+            <span class="text-[#0066cc] text-xs">◆</span>
+            <span class="text-[#86868b] text-sm uppercase tracking-widest">Proxmox</span>
+            <span class="text-[#0066cc] text-xs">◆</span>
+            <span class="text-[#86868b] text-sm uppercase tracking-widest">Nextcloud</span>
+            <span class="text-[#0066cc] text-xs">◆</span>
+            <span class="text-[#86868b] text-sm uppercase tracking-widest">IoT Integration</span>
+            <span class="text-[#0066cc] text-xs">◆</span>
+            <span class="text-[#86868b] text-sm uppercase tracking-widest">Fiber Optic</span>
+            <span class="text-[#0066cc] text-xs">◆</span>
+            <span class="text-[#86868b] text-sm uppercase tracking-widest">CCTV Installation</span>
+            <span class="text-[#0066cc] text-xs">◆</span>
+            <span class="text-[#86868b] text-sm uppercase tracking-widest">Load Balancing</span>
+            <span class="text-[#0066cc] text-xs">◆</span>
         </div>
     </section>
 
@@ -337,57 +337,57 @@
         <div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-12">
                 <div class="md:col-span-1">
-                    <p class="text-xs uppercase tracking-[0.3em] text-neutral-500 flex items-center gap-3 sticky top-24">
-                        <span class="w-8 h-px bg-red-500"></span>
+                    <p class="text-xs uppercase tracking-[0.3em] text-[#86868b] flex items-center gap-3 sticky top-24">
+                        <span class="w-8 h-px bg-[#0066cc]"></span>
                         Keahlian
                     </p>
                 </div>
                 <div class="md:col-span-3">
                     <h2 class="font-syne text-3xl md:text-5xl font-medium tracking-tight mb-16 scroll-animate">
-                        Kompetensi <span class="text-red-500">teknis</span> yang teruji
+                        Kompetensi <span class="text-[#0066cc]">teknis</span> yang teruji
                     </h2>
 
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                         <!-- Skill Category 1: Networking -->
-                        <div class="border border-white/5 p-8 card-hover scroll-animate group">
+                        <div class="border bg-white rounded-2xl shadow-sm border border-black/5 p-8 card-hover scroll-animate group">
                             <div class="flex items-start justify-between mb-6">
-                                <div class="w-12 h-12 border border-red-500/20 flex items-center justify-center group-hover:bg-red-500/10 transition-colors duration-500">
-                                    <span class="iconify text-red-500" data-icon="mdi:server-network" data-width="24"></span>
+                                <div class="w-12 h-12 border border-[#0066cc]/20 flex items-center justify-center group-hover:bg-[#0066cc]/10 transition-colors duration-500">
+                                    <span class="iconify text-[#0066cc]" data-icon="mdi:server-network" data-width="24"></span>
                                 </div>
-                                <span class="text-xs text-neutral-600 font-mono">01</span>
+                                <span class="text-xs text-[#86868b] font-mono">01</span>
                             </div>
                             <h3 class="font-syne text-xl font-medium mb-4">Jaringan</h3>
-                            <p class="text-neutral-400 text-sm leading-relaxed mb-6">Instalasi & troubleshooting jaringan kabel maupun nirkabel, konfigurasi router & switch Mikrotik dan Cisco.</p>
+                            <p class="text-[#515154] text-sm leading-relaxed mb-6">Instalasi & troubleshooting jaringan kabel maupun nirkabel, konfigurasi router & switch Mikrotik dan Cisco.</p>
                             <div class="space-y-3">
                                 <div>
-                                    <div class="flex justify-between text-xs text-neutral-500 mb-1">
+                                    <div class="flex justify-between text-xs text-[#86868b] mb-1">
                                         <span>Mikrotik</span><span>95%</span>
                                     </div>
-                                    <div class="h-1 bg-white/5 rounded-full overflow-hidden">
+                                    <div class="h-1 bg-black/5 rounded-full overflow-hidden">
                                         <div class="skill-bar h-full bg-gradient-to-r from-red-600 to-red-400 rounded-full" data-width="95%"></div>
                                     </div>
                                 </div>
                                 <div>
-                                    <div class="flex justify-between text-xs text-neutral-500 mb-1">
+                                    <div class="flex justify-between text-xs text-[#86868b] mb-1">
                                         <span>Cisco</span><span>85%</span>
                                     </div>
-                                    <div class="h-1 bg-white/5 rounded-full overflow-hidden">
+                                    <div class="h-1 bg-black/5 rounded-full overflow-hidden">
                                         <div class="skill-bar h-full bg-gradient-to-r from-red-600 to-red-400 rounded-full" data-width="85%"></div>
                                     </div>
                                 </div>
                                 <div>
-                                    <div class="flex justify-between text-xs text-neutral-500 mb-1">
+                                    <div class="flex justify-between text-xs text-[#86868b] mb-1">
                                         <span>Fiber Optic / UTP</span><span>90%</span>
                                     </div>
-                                    <div class="h-1 bg-white/5 rounded-full overflow-hidden">
+                                    <div class="h-1 bg-black/5 rounded-full overflow-hidden">
                                         <div class="skill-bar h-full bg-gradient-to-r from-red-600 to-red-400 rounded-full" data-width="90%"></div>
                                     </div>
                                 </div>
                                 <div>
-                                    <div class="flex justify-between text-xs text-neutral-500 mb-1">
+                                    <div class="flex justify-between text-xs text-[#86868b] mb-1">
                                         <span>Wireless Network</span><span>88%</span>
                                     </div>
-                                    <div class="h-1 bg-white/5 rounded-full overflow-hidden">
+                                    <div class="h-1 bg-black/5 rounded-full overflow-hidden">
                                         <div class="skill-bar h-full bg-gradient-to-r from-red-600 to-red-400 rounded-full" data-width="88%"></div>
                                     </div>
                                 </div>
@@ -395,45 +395,45 @@
                         </div>
 
                         <!-- Skill Category 2: Systems & Server -->
-                        <div class="border border-white/5 p-8 card-hover scroll-animate group">
+                        <div class="border bg-white rounded-2xl shadow-sm border border-black/5 p-8 card-hover scroll-animate group">
                             <div class="flex items-start justify-between mb-6">
-                                <div class="w-12 h-12 border border-red-500/20 flex items-center justify-center group-hover:bg-red-500/10 transition-colors duration-500">
-                                    <span class="iconify text-red-500" data-icon="mdi:harddisk" data-width="24"></span>
+                                <div class="w-12 h-12 border border-[#0066cc]/20 flex items-center justify-center group-hover:bg-[#0066cc]/10 transition-colors duration-500">
+                                    <span class="iconify text-[#0066cc]" data-icon="mdi:harddisk" data-width="24"></span>
                                 </div>
-                                <span class="text-xs text-neutral-600 font-mono">02</span>
+                                <span class="text-xs text-[#86868b] font-mono">02</span>
                             </div>
                             <h3 class="font-syne text-xl font-medium mb-4">Sistem & Server</h3>
-                            <p class="text-neutral-400 text-sm leading-relaxed mb-6">Pengelolaan server berbasis Linux dan Windows, virtualisasi dengan Proxmox, serta cloud storage Nextcloud.</p>
+                            <p class="text-[#515154] text-sm leading-relaxed mb-6">Pengelolaan server berbasis Linux dan Windows, virtualisasi dengan Proxmox, serta cloud storage Nextcloud.</p>
                             <div class="space-y-3">
                                 <div>
-                                    <div class="flex justify-between text-xs text-neutral-500 mb-1">
+                                    <div class="flex justify-between text-xs text-[#86868b] mb-1">
                                         <span>Linux Server</span><span>88%</span>
                                     </div>
-                                    <div class="h-1 bg-white/5 rounded-full overflow-hidden">
+                                    <div class="h-1 bg-black/5 rounded-full overflow-hidden">
                                         <div class="skill-bar h-full bg-gradient-to-r from-red-600 to-red-400 rounded-full" data-width="88%"></div>
                                     </div>
                                 </div>
                                 <div>
-                                    <div class="flex justify-between text-xs text-neutral-500 mb-1">
+                                    <div class="flex justify-between text-xs text-[#86868b] mb-1">
                                         <span>Windows Server</span><span>82%</span>
                                     </div>
-                                    <div class="h-1 bg-white/5 rounded-full overflow-hidden">
+                                    <div class="h-1 bg-black/5 rounded-full overflow-hidden">
                                         <div class="skill-bar h-full bg-gradient-to-r from-red-600 to-red-400 rounded-full" data-width="82%"></div>
                                     </div>
                                 </div>
                                 <div>
-                                    <div class="flex justify-between text-xs text-neutral-500 mb-1">
+                                    <div class="flex justify-between text-xs text-[#86868b] mb-1">
                                         <span>Proxmox VE</span><span>80%</span>
                                     </div>
-                                    <div class="h-1 bg-white/5 rounded-full overflow-hidden">
+                                    <div class="h-1 bg-black/5 rounded-full overflow-hidden">
                                         <div class="skill-bar h-full bg-gradient-to-r from-red-600 to-red-400 rounded-full" data-width="80%"></div>
                                     </div>
                                 </div>
                                 <div>
-                                    <div class="flex justify-between text-xs text-neutral-500 mb-1">
+                                    <div class="flex justify-between text-xs text-[#86868b] mb-1">
                                         <span>Nextcloud</span><span>78%</span>
                                     </div>
-                                    <div class="h-1 bg-white/5 rounded-full overflow-hidden">
+                                    <div class="h-1 bg-black/5 rounded-full overflow-hidden">
                                         <div class="skill-bar h-full bg-gradient-to-r from-red-600 to-red-400 rounded-full" data-width="78%"></div>
                                     </div>
                                 </div>
@@ -441,45 +441,45 @@
                         </div>
 
                         <!-- Skill Category 3: Programming & IoT -->
-                        <div class="border border-white/5 p-8 card-hover scroll-animate group">
+                        <div class="border bg-white rounded-2xl shadow-sm border border-black/5 p-8 card-hover scroll-animate group">
                             <div class="flex items-start justify-between mb-6">
-                                <div class="w-12 h-12 border border-red-500/20 flex items-center justify-center group-hover:bg-red-500/10 transition-colors duration-500">
-                                    <span class="iconify text-red-500" data-icon="mdi:code-braces" data-width="24"></span>
+                                <div class="w-12 h-12 border border-[#0066cc]/20 flex items-center justify-center group-hover:bg-[#0066cc]/10 transition-colors duration-500">
+                                    <span class="iconify text-[#0066cc]" data-icon="mdi:code-braces" data-width="24"></span>
                                 </div>
-                                <span class="text-xs text-neutral-600 font-mono">03</span>
+                                <span class="text-xs text-[#86868b] font-mono">03</span>
                             </div>
                             <h3 class="font-syne text-xl font-medium mb-4">Pemrograman & IoT</h3>
-                            <p class="text-neutral-400 text-sm leading-relaxed mb-6">Pengembangan aplikasi berbasis web dan integrasi teknologi Internet of Things untuk solusi smart system.</p>
+                            <p class="text-[#515154] text-sm leading-relaxed mb-6">Pengembangan aplikasi berbasis web dan integrasi teknologi Internet of Things untuk solusi smart system.</p>
                             <div class="space-y-3">
                                 <div>
-                                    <div class="flex justify-between text-xs text-neutral-500 mb-1">
+                                    <div class="flex justify-between text-xs text-[#86868b] mb-1">
                                         <span>Python</span><span>85%</span>
                                     </div>
-                                    <div class="h-1 bg-white/5 rounded-full overflow-hidden">
+                                    <div class="h-1 bg-black/5 rounded-full overflow-hidden">
                                         <div class="skill-bar h-full bg-gradient-to-r from-red-600 to-red-400 rounded-full" data-width="85%"></div>
                                     </div>
                                 </div>
                                 <div>
-                                    <div class="flex justify-between text-xs text-neutral-500 mb-1">
+                                    <div class="flex justify-between text-xs text-[#86868b] mb-1">
                                         <span>HTML & CSS</span><span>90%</span>
                                     </div>
-                                    <div class="h-1 bg-white/5 rounded-full overflow-hidden">
+                                    <div class="h-1 bg-black/5 rounded-full overflow-hidden">
                                         <div class="skill-bar h-full bg-gradient-to-r from-red-600 to-red-400 rounded-full" data-width="90%"></div>
                                     </div>
                                 </div>
                                 <div>
-                                    <div class="flex justify-between text-xs text-neutral-500 mb-1">
+                                    <div class="flex justify-between text-xs text-[#86868b] mb-1">
                                         <span>JavaScript</span><span>78%</span>
                                     </div>
-                                    <div class="h-1 bg-white/5 rounded-full overflow-hidden">
+                                    <div class="h-1 bg-black/5 rounded-full overflow-hidden">
                                         <div class="skill-bar h-full bg-gradient-to-r from-red-600 to-red-400 rounded-full" data-width="78%"></div>
                                     </div>
                                 </div>
                                 <div>
-                                    <div class="flex justify-between text-xs text-neutral-500 mb-1">
+                                    <div class="flex justify-between text-xs text-[#86868b] mb-1">
                                         <span>IoT Integration</span><span>80%</span>
                                     </div>
-                                    <div class="h-1 bg-white/5 rounded-full overflow-hidden">
+                                    <div class="h-1 bg-black/5 rounded-full overflow-hidden">
                                         <div class="skill-bar h-full bg-gradient-to-r from-red-600 to-red-400 rounded-full" data-width="80%"></div>
                                     </div>
                                 </div>
@@ -487,42 +487,42 @@
                         </div>
 
                         <!-- Skill Category 4: Software & Language -->
-                        <div class="border border-white/5 p-8 card-hover scroll-animate group">
+                        <div class="border bg-white rounded-2xl shadow-sm border border-black/5 p-8 card-hover scroll-animate group">
                             <div class="flex items-start justify-between mb-6">
-                                <div class="w-12 h-12 border border-red-500/20 flex items-center justify-center group-hover:bg-red-500/10 transition-colors duration-500">
-                                    <span class="iconify text-red-500" data-icon="mdi:translate" data-width="24"></span>
+                                <div class="w-12 h-12 border border-[#0066cc]/20 flex items-center justify-center group-hover:bg-[#0066cc]/10 transition-colors duration-500">
+                                    <span class="iconify text-[#0066cc]" data-icon="mdi:translate" data-width="24"></span>
                                 </div>
-                                <span class="text-xs text-neutral-600 font-mono">04</span>
+                                <span class="text-xs text-[#86868b] font-mono">04</span>
                             </div>
                             <h3 class="font-syne text-xl font-medium mb-4">Perangkat Lunak & Bahasa</h3>
-                            <p class="text-neutral-400 text-sm leading-relaxed mb-6">Mahir menggunakan Microsoft Office untuk kebutuhan administrasi dan dokumentasi teknis, serta bilingual.</p>
+                            <p class="text-[#515154] text-sm leading-relaxed mb-6">Mahir menggunakan Microsoft Office untuk kebutuhan administrasi dan dokumentasi teknis, serta bilingual.</p>
                             <div class="space-y-4 mt-6">
                                 <div class="flex items-center gap-3">
-                                    <span class="iconify text-neutral-500" data-icon="mdi:file-word-outline" data-width="20"></span>
-                                    <span class="text-sm text-neutral-300">Microsoft Word</span>
+                                    <span class="iconify text-[#86868b]" data-icon="mdi:file-word-outline" data-width="20"></span>
+                                    <span class="text-sm text-[#1d1d1f]">Microsoft Word</span>
                                 </div>
                                 <div class="flex items-center gap-3">
-                                    <span class="iconify text-neutral-500" data-icon="mdi:file-powerpoint-outline" data-width="20"></span>
-                                    <span class="text-sm text-neutral-300">Microsoft PowerPoint</span>
+                                    <span class="iconify text-[#86868b]" data-icon="mdi:file-powerpoint-outline" data-width="20"></span>
+                                    <span class="text-sm text-[#1d1d1f]">Microsoft PowerPoint</span>
                                 </div>
                                 <div class="flex items-center gap-3">
-                                    <span class="iconify text-neutral-500" data-icon="mdi:file-excel-outline" data-width="20"></span>
-                                    <span class="text-sm text-neutral-300">Microsoft Excel</span>
+                                    <span class="iconify text-[#86868b]" data-icon="mdi:file-excel-outline" data-width="20"></span>
+                                    <span class="text-sm text-[#1d1d1f]">Microsoft Excel</span>
                                 </div>
-                                <div class="h-px bg-white/5 my-2"></div>
+                                <div class="h-px bg-black/5 my-2"></div>
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-2">
                                         <span class="text-sm">🇮🇩</span>
-                                        <span class="text-sm text-neutral-300">Bahasa Indonesia</span>
+                                        <span class="text-sm text-[#1d1d1f]">Bahasa Indonesia</span>
                                     </div>
-                                    <span class="text-xs text-red-500 font-medium">Native</span>
+                                    <span class="text-xs text-[#0066cc] font-medium">Native</span>
                                 </div>
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center gap-2">
                                         <span class="text-sm">🇬🇧</span>
-                                        <span class="text-sm text-neutral-300">English</span>
+                                        <span class="text-sm text-[#1d1d1f]">English</span>
                                     </div>
-                                    <span class="text-xs text-neutral-500 font-medium">TOEFL Certified</span>
+                                    <span class="text-xs text-[#86868b] font-medium">TOEFL Certified</span>
                                 </div>
                             </div>
                         </div>
@@ -538,109 +538,109 @@
         <div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-20 relative z-10">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-12">
                 <div class="md:col-span-1">
-                    <p class="text-xs uppercase tracking-[0.3em] text-neutral-500 flex items-center gap-3 sticky top-24">
-                        <span class="w-8 h-px bg-red-500"></span>
+                    <p class="text-xs uppercase tracking-[0.3em] text-[#86868b] flex items-center gap-3 sticky top-24">
+                        <span class="w-8 h-px bg-[#0066cc]"></span>
                         Pengalaman
                     </p>
                 </div>
                 <div class="md:col-span-3">
                     <h2 class="font-syne text-3xl md:text-5xl font-medium tracking-tight mb-16 scroll-animate">
-                        Pengalaman <span class="text-red-500">kerja</span> langsung
+                        Pengalaman <span class="text-[#0066cc]">kerja</span> langsung
                     </h2>
 
                     <!-- Timeline -->
                     <div class="relative">
                         <!-- Timeline Line -->
-                        <div class="absolute left-0 md:left-6 top-0 bottom-0 w-px timeline-line"></div>
+                        <div class="absolute left-0 md:left-6 top-0 bottom-0 w-px "></div>
 
                         <!-- Experience 1 -->
                         <div class="relative pl-8 md:pl-20 pb-16 scroll-animate">
-                            <div class="absolute left-0 md:left-6 top-1 w-3 h-3 bg-red-500 rounded-full -translate-x-1.5 pulse-glow"></div>
-                            <div class="absolute left-0 md:left-6 top-1 w-6 h-6 border border-red-500/30 rounded-full -translate-x-3 animate-ping"></div>
+                            <div class="absolute left-0 md:left-6 top-1 w-3 h-3 bg-[#0066cc] rounded-full -translate-x-1.5 pulse-glow"></div>
+                            <div class="absolute left-0 md:left-6 top-1 w-6 h-6 border border-[#0066cc]/30 rounded-full -translate-x-3 animate-ping"></div>
                             <div class="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
                                 <div>
-                                    <p class="text-xs text-red-400 uppercase tracking-widest mb-2">Maret – Mei 2024</p>
+                                    <p class="text-xs text-[#0071e3] uppercase tracking-widest mb-2">Maret – Mei 2024</p>
                                     <h3 class="font-syne text-xl md:text-2xl font-medium">PT PLN UPT Banjarbaru</h3>
-                                    <p class="text-sm text-neutral-400 mt-1">IT Staff — Bidang Renev</p>
+                                    <p class="text-sm text-[#515154] mt-1">IT Staff — Bidang Renev</p>
                                 </div>
                             </div>
-                            <div class="border border-white/5 bg-white/[0.02] p-6 space-y-3">
+                            <div class="border bg-white rounded-2xl shadow-sm border border-black/5 bg-black/[0.02] p-6 space-y-3">
                                 <div class="flex items-start gap-3">
-                                    <span class="iconify text-red-500 mt-0.5 shrink-0" data-icon="mdi:chevron-right" data-width="16"></span>
-                                    <p class="text-sm text-neutral-300">Melakukan pemasangan CCTV di 4 titik strategis untuk meningkatkan keamanan area operasional.</p>
+                                    <span class="iconify text-[#0066cc] mt-0.5 shrink-0" data-icon="mdi:chevron-right" data-width="16"></span>
+                                    <p class="text-sm text-[#1d1d1f]">Melakukan pemasangan CCTV di 4 titik strategis untuk meningkatkan keamanan area operasional.</p>
                                 </div>
                                 <div class="flex items-start gap-3">
-                                    <span class="iconify text-red-500 mt-0.5 shrink-0" data-icon="mdi:chevron-right" data-width="16"></span>
-                                    <p class="text-sm text-neutral-300">Perbaikan dan manajemen router Mikrotik melalui AnyDesk/WinBox untuk pemeliharaan jaringan remote.</p>
+                                    <span class="iconify text-[#0066cc] mt-0.5 shrink-0" data-icon="mdi:chevron-right" data-width="16"></span>
+                                    <p class="text-sm text-[#1d1d1f]">Perbaikan dan manajemen router Mikrotik melalui AnyDesk/WinBox untuk pemeliharaan jaringan remote.</p>
                                 </div>
                                 <div class="flex items-start gap-3">
-                                    <span class="iconify text-red-500 mt-0.5 shrink-0" data-icon="mdi:chevron-right" data-width="16"></span>
-                                    <p class="text-sm text-neutral-300">Monitoring dan troubleshooting jaringan internal untuk memastikan konektivitas stabil.</p>
+                                    <span class="iconify text-[#0066cc] mt-0.5 shrink-0" data-icon="mdi:chevron-right" data-width="16"></span>
+                                    <p class="text-sm text-[#1d1d1f]">Monitoring dan troubleshooting jaringan internal untuk memastikan konektivitas stabil.</p>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Experience 2 -->
                         <div class="relative pl-8 md:pl-20 pb-16 scroll-animate">
-                            <div class="absolute left-0 md:left-6 top-1 w-3 h-3 bg-red-500/60 rounded-full -translate-x-1.5"></div>
+                            <div class="absolute left-0 md:left-6 top-1 w-3 h-3 bg-[#0066cc]/60 rounded-full -translate-x-1.5"></div>
                             <div class="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
                                 <div>
-                                    <p class="text-xs text-red-400/60 uppercase tracking-widest mb-2">Januari – Februari 2024</p>
+                                    <p class="text-xs text-[#0071e3]/60 uppercase tracking-widest mb-2">Januari – Februari 2024</p>
                                     <h3 class="font-syne text-xl md:text-2xl font-medium">Inspektorat Daerah Prov. Kalsel</h3>
-                                    <p class="text-sm text-neutral-400 mt-1">IT Staff</p>
+                                    <p class="text-sm text-[#515154] mt-1">IT Staff</p>
                                 </div>
                             </div>
-                            <div class="border border-white/5 bg-white/[0.02] p-6 space-y-3">
+                            <div class="border bg-white rounded-2xl shadow-sm border border-black/5 bg-black/[0.02] p-6 space-y-3">
                                 <div class="flex items-start gap-3">
-                                    <span class="iconify text-red-500/60 mt-0.5 shrink-0" data-icon="mdi:chevron-right" data-width="16"></span>
-                                    <p class="text-sm text-neutral-300">Memberikan dukungan teknis TI harian untuk seluruh pegawai inspektorat.</p>
+                                    <span class="iconify text-[#0066cc]/60 mt-0.5 shrink-0" data-icon="mdi:chevron-right" data-width="16"></span>
+                                    <p class="text-sm text-[#1d1d1f]">Memberikan dukungan teknis TI harian untuk seluruh pegawai inspektorat.</p>
                                 </div>
                                 <div class="flex items-start gap-3">
-                                    <span class="iconify text-red-500/60 mt-0.5 shrink-0" data-icon="mdi:chevron-right" data-width="16"></span>
-                                    <p class="text-sm text-neutral-300">Instalasi perangkat keras untuk mendukung kelancaran operasional kantor.</p>
+                                    <span class="iconify text-[#0066cc]/60 mt-0.5 shrink-0" data-icon="mdi:chevron-right" data-width="16"></span>
+                                    <p class="text-sm text-[#1d1d1f]">Instalasi perangkat keras untuk mendukung kelancaran operasional kantor.</p>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Experience 3 -->
                         <div class="relative pl-8 md:pl-20 scroll-animate">
-                            <div class="absolute left-0 md:left-6 top-1 w-3 h-3 bg-red-500/40 rounded-full -translate-x-1.5"></div>
+                            <div class="absolute left-0 md:left-6 top-1 w-3 h-3 bg-[#0066cc]/40 rounded-full -translate-x-1.5"></div>
                             <div class="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
                                 <div>
-                                    <p class="text-xs text-red-400/40 uppercase tracking-widest mb-2">Oktober – November 2022</p>
+                                    <p class="text-xs text-[#0071e3]/40 uppercase tracking-widest mb-2">Oktober – November 2022</p>
                                     <h3 class="font-syne text-xl md:text-2xl font-medium">Kantor Desa Kait-Kait Baru</h3>
-                                    <p class="text-sm text-neutral-400 mt-1">Teknisi Jaringan</p>
+                                    <p class="text-sm text-[#515154] mt-1">Teknisi Jaringan</p>
                                 </div>
                             </div>
-                            <div class="border border-white/5 bg-white/[0.02] p-6 space-y-3">
+                            <div class="border bg-white rounded-2xl shadow-sm border border-black/5 bg-black/[0.02] p-6 space-y-3">
                                 <div class="flex items-start gap-3">
-                                    <span class="iconify text-red-500/40 mt-0.5 shrink-0" data-icon="mdi:chevron-right" data-width="16"></span>
-                                    <p class="text-sm text-neutral-300">Instalasi jaringan wireless (hotspot) di 3 titik kantor balai desa untuk meningkatkan akses internet.</p>
+                                    <span class="iconify text-[#0066cc]/40 mt-0.5 shrink-0" data-icon="mdi:chevron-right" data-width="16"></span>
+                                    <p class="text-sm text-[#1d1d1f]">Instalasi jaringan wireless (hotspot) di 3 titik kantor balai desa untuk meningkatkan akses internet.</p>
                                 </div>
                                 <div class="flex items-start gap-3">
-                                    <span class="iconify text-red-500/40 mt-0.5 shrink-0" data-icon="mdi:chevron-right" data-width="16"></span>
-                                    <p class="text-sm text-neutral-300">Mengintegrasikan jaringan IconNet/ICON+ (PLN) dan IndiHome untuk redundansi koneksi.</p>
+                                    <span class="iconify text-[#0066cc]/40 mt-0.5 shrink-0" data-icon="mdi:chevron-right" data-width="16"></span>
+                                    <p class="text-sm text-[#1d1d1f]">Mengintegrasikan jaringan IconNet/ICON+ (PLN) dan IndiHome untuk redundansi koneksi.</p>
                                 </div>
                                 <div class="flex items-start gap-3">
-                                    <span class="iconify text-red-500/40 mt-0.5 shrink-0" data-icon="mdi:chevron-right" data-width="16"></span>
-                                    <p class="text-sm text-neutral-300">Konfigurasi load balance pada router Mikrotik untuk optimalisasi bandwidth.</p>
+                                    <span class="iconify text-[#0066cc]/40 mt-0.5 shrink-0" data-icon="mdi:chevron-right" data-width="16"></span>
+                                    <p class="text-sm text-[#1d1d1f]">Konfigurasi load balance pada router Mikrotik untuk optimalisasi bandwidth.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
 
                     <!-- Organization -->
-                    <div class="mt-20 border border-white/5 p-8 card-hover scroll-animate">
+                    <div class="mt-20 border bg-white rounded-2xl shadow-sm border border-black/5 p-8 card-hover scroll-animate">
                         <div class="flex items-center gap-4 mb-4">
-                            <div class="w-12 h-12 border border-red-500/20 flex items-center justify-center">
-                                <span class="iconify text-red-500" data-icon="mdi:account-group-outline" data-width="24"></span>
+                            <div class="w-12 h-12 border border-[#0066cc]/20 flex items-center justify-center">
+                                <span class="iconify text-[#0066cc]" data-icon="mdi:account-group-outline" data-width="24"></span>
                             </div>
                             <div>
                                 <h3 class="font-syne text-lg font-medium">HIMA Prodi TRKJ</h3>
-                                <p class="text-xs text-neutral-500 uppercase tracking-widest">Anggota Bidang Minat & Bakat • 2021–2023</p>
+                                <p class="text-xs text-[#86868b] uppercase tracking-widest">Anggota Bidang Minat & Bakat • 2021–2023</p>
                             </div>
                         </div>
-                        <p class="text-sm text-neutral-400 leading-relaxed">Aktif berkontribusi dalam organisasi Himpunan Mahasiswa Prodi Teknologi Rekayasa Komputer Jaringan, mengelola kegiatan minat dan bakat mahasiswa.</p>
+                        <p class="text-sm text-[#515154] leading-relaxed">Aktif berkontribusi dalam organisasi Himpunan Mahasiswa Prodi Teknologi Rekayasa Komputer Jaringan, mengelola kegiatan minat dan bakat mahasiswa.</p>
                     </div>
                 </div>
             </div>
@@ -648,108 +648,108 @@
     </section>
 
     <!-- Certifications Section -->
-    <section id="certifications" class="py-20 md:py-32 relative border-t border-white/5">
+    <section id="certifications" class="py-20 md:py-32 relative border-t bg-white rounded-2xl shadow-sm border border-black/5">
         <div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-12">
                 <div class="md:col-span-1">
-                    <p class="text-xs uppercase tracking-[0.3em] text-neutral-500 flex items-center gap-3 sticky top-24">
-                        <span class="w-8 h-px bg-red-500"></span>
+                    <p class="text-xs uppercase tracking-[0.3em] text-[#86868b] flex items-center gap-3 sticky top-24">
+                        <span class="w-8 h-px bg-[#0066cc]"></span>
                         Sertifikasi
                     </p>
                 </div>
                 <div class="md:col-span-3">
                     <h2 class="font-syne text-3xl md:text-5xl font-medium tracking-tight mb-16 scroll-animate">
-                        Sertifikasi <span class="text-red-500">resmi</span> yang dimiliki
+                        Sertifikasi <span class="text-[#0066cc]">resmi</span> yang dimiliki
                     </h2>
 
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         <!-- Cert 1 -->
-                        <div class="cert-badge border border-white/5 p-6 flex items-start gap-4 scroll-animate group">
-                            <div class="w-10 h-10 bg-red-500/10 border border-red-500/20 flex items-center justify-center shrink-0 group-hover:bg-red-500/20 transition-colors">
-                                <span class="iconify text-red-500" data-icon="mdi:shield-check-outline" data-width="20"></span>
+                        <div class="cert-badge border bg-white rounded-2xl shadow-sm border border-black/5 p-6 flex items-start gap-4 scroll-animate group">
+                            <div class="w-10 h-10 bg-[#0066cc]/10 border border-[#0066cc]/20 flex items-center justify-center shrink-0 group-hover:bg-[#0066cc]/20 transition-colors">
+                                <span class="iconify text-[#0066cc]" data-icon="mdi:shield-check-outline" data-width="20"></span>
                             </div>
                             <div>
-                                <p class="text-sm font-medium text-white">Network Designer</p>
-                                <p class="text-xs text-neutral-500 mt-1">BNSP • 2025</p>
+                                <p class="text-sm font-medium text-black">Network Designer</p>
+                                <p class="text-xs text-[#86868b] mt-1">BNSP • 2025</p>
                             </div>
                         </div>
 
                         <!-- Cert 2 -->
-                        <div class="cert-badge border border-white/5 p-6 flex items-start gap-4 scroll-animate group">
-                            <div class="w-10 h-10 bg-red-500/10 border border-red-500/20 flex items-center justify-center shrink-0 group-hover:bg-red-500/20 transition-colors">
-                                <span class="iconify text-red-500" data-icon="mdi:shield-check-outline" data-width="20"></span>
+                        <div class="cert-badge border bg-white rounded-2xl shadow-sm border border-black/5 p-6 flex items-start gap-4 scroll-animate group">
+                            <div class="w-10 h-10 bg-[#0066cc]/10 border border-[#0066cc]/20 flex items-center justify-center shrink-0 group-hover:bg-[#0066cc]/20 transition-colors">
+                                <span class="iconify text-[#0066cc]" data-icon="mdi:shield-check-outline" data-width="20"></span>
                             </div>
                             <div>
-                                <p class="text-sm font-medium text-white">Network Administrator Madya</p>
-                                <p class="text-xs text-neutral-500 mt-1">BNSP • 2024</p>
+                                <p class="text-sm font-medium text-black">Network Administrator Madya</p>
+                                <p class="text-xs text-[#86868b] mt-1">BNSP • 2024</p>
                             </div>
                         </div>
 
                         <!-- Cert 3 -->
-                        <div class="cert-badge border border-white/5 p-6 flex items-start gap-4 scroll-animate group">
-                            <div class="w-10 h-10 bg-red-500/10 border border-red-500/20 flex items-center justify-center shrink-0 group-hover:bg-red-500/20 transition-colors">
-                                <span class="iconify text-red-500" data-icon="mdi:shield-check-outline" data-width="20"></span>
+                        <div class="cert-badge border bg-white rounded-2xl shadow-sm border border-black/5 p-6 flex items-start gap-4 scroll-animate group">
+                            <div class="w-10 h-10 bg-[#0066cc]/10 border border-[#0066cc]/20 flex items-center justify-center shrink-0 group-hover:bg-[#0066cc]/20 transition-colors">
+                                <span class="iconify text-[#0066cc]" data-icon="mdi:shield-check-outline" data-width="20"></span>
                             </div>
                             <div>
-                                <p class="text-sm font-medium text-white">Junior Network Administrator</p>
-                                <p class="text-xs text-neutral-500 mt-1">BNSP • 2023</p>
+                                <p class="text-sm font-medium text-black">Junior Network Administrator</p>
+                                <p class="text-xs text-[#86868b] mt-1">BNSP • 2023</p>
                             </div>
                         </div>
 
                         <!-- Cert 4 -->
-                        <div class="cert-badge border border-white/5 p-6 flex items-start gap-4 scroll-animate group">
-                            <div class="w-10 h-10 bg-red-500/10 border border-red-500/20 flex items-center justify-center shrink-0 group-hover:bg-red-500/20 transition-colors">
-                                <span class="iconify text-red-500" data-icon="mdi:shield-check-outline" data-width="20"></span>
+                        <div class="cert-badge border bg-white rounded-2xl shadow-sm border border-black/5 p-6 flex items-start gap-4 scroll-animate group">
+                            <div class="w-10 h-10 bg-[#0066cc]/10 border border-[#0066cc]/20 flex items-center justify-center shrink-0 group-hover:bg-[#0066cc]/20 transition-colors">
+                                <span class="iconify text-[#0066cc]" data-icon="mdi:shield-check-outline" data-width="20"></span>
                             </div>
                             <div>
-                                <p class="text-sm font-medium text-white">Teknisi Muda Jaringan Komputer</p>
-                                <p class="text-xs text-neutral-500 mt-1">BNSP • 2022</p>
+                                <p class="text-sm font-medium text-black">Teknisi Muda Jaringan Komputer</p>
+                                <p class="text-xs text-[#86868b] mt-1">BNSP • 2022</p>
                             </div>
                         </div>
 
                         <!-- Cert 5 -->
-                        <div class="cert-badge border border-white/5 p-6 flex items-start gap-4 scroll-animate group">
-                            <div class="w-10 h-10 bg-white/5 border border-white/10 flex items-center justify-center shrink-0 group-hover:bg-white/10 transition-colors">
-                                <span class="iconify text-neutral-400" data-icon="mdi:file-certificate-outline" data-width="20"></span>
+                        <div class="cert-badge border bg-white rounded-2xl shadow-sm border border-black/5 p-6 flex items-start gap-4 scroll-animate group">
+                            <div class="w-10 h-10 bg-black/5 border border-black/10 flex items-center justify-center shrink-0 group-hover:bg-black/10 transition-colors">
+                                <span class="iconify text-[#515154]" data-icon="mdi:file-certificate-outline" data-width="20"></span>
                             </div>
                             <div>
-                                <p class="text-sm font-medium text-white">Sertifikat PKL</p>
-                                <p class="text-xs text-neutral-500 mt-1">PT PLN UPT Banjarbaru • 2024</p>
+                                <p class="text-sm font-medium text-black">Sertifikat PKL</p>
+                                <p class="text-xs text-[#86868b] mt-1">PT PLN UPT Banjarbaru • 2024</p>
                             </div>
                         </div>
 
                         <!-- Cert 6 -->
-                        <div class="cert-badge border border-white/5 p-6 flex items-start gap-4 scroll-animate group">
-                            <div class="w-10 h-10 bg-white/5 border border-white/10 flex items-center justify-center shrink-0 group-hover:bg-white/10 transition-colors">
-                                <span class="iconify text-neutral-400" data-icon="mdi:lightbulb-outline" data-width="20"></span>
+                        <div class="cert-badge border bg-white rounded-2xl shadow-sm border border-black/5 p-6 flex items-start gap-4 scroll-animate group">
+                            <div class="w-10 h-10 bg-black/5 border border-black/10 flex items-center justify-center shrink-0 group-hover:bg-black/10 transition-colors">
+                                <span class="iconify text-[#515154]" data-icon="mdi:lightbulb-outline" data-width="20"></span>
                             </div>
                             <div>
-                                <p class="text-sm font-medium text-white">Wirausaha Merdeka</p>
-                                <p class="text-xs text-neutral-500 mt-1">MBKM • 2023</p>
+                                <p class="text-sm font-medium text-black">Wirausaha Merdeka</p>
+                                <p class="text-xs text-[#86868b] mt-1">MBKM • 2023</p>
                             </div>
                         </div>
 
                         <!-- Cert 7 -->
-                        <div class="cert-badge border border-white/5 p-6 flex items-start gap-4 scroll-animate group">
-                            <div class="w-10 h-10 bg-white/5 border border-white/10 flex items-center justify-center shrink-0 group-hover:bg-white/10 transition-colors">
-                                <span class="iconify text-neutral-400" data-icon="mdi:translate" data-width="20"></span>
+                        <div class="cert-badge border bg-white rounded-2xl shadow-sm border border-black/5 p-6 flex items-start gap-4 scroll-animate group">
+                            <div class="w-10 h-10 bg-black/5 border border-black/10 flex items-center justify-center shrink-0 group-hover:bg-black/10 transition-colors">
+                                <span class="iconify text-[#515154]" data-icon="mdi:translate" data-width="20"></span>
                             </div>
                             <div>
-                                <p class="text-sm font-medium text-white">TOEFL</p>
-                                <p class="text-xs text-neutral-500 mt-1">UPT Bahasa Politeknik Negeri Tanah Laut • 2023</p>
+                                <p class="text-sm font-medium text-black">TOEFL</p>
+                                <p class="text-xs text-[#86868b] mt-1">UPT Bahasa Politeknik Negeri Tanah Laut • 2023</p>
                             </div>
                         </div>
                     </div>
 
                     <!-- BNSP Highlight -->
-                    <div class="mt-12 border border-red-500/10 bg-red-500/[0.03] p-8 scroll-animate">
+                    <div class="mt-12 border border-[#0066cc]/10 bg-[#0066cc]/[0.03] p-8 scroll-animate">
                         <div class="flex items-start gap-4">
-                            <div class="w-16 h-16 border border-red-500/20 flex items-center justify-center shrink-0 pulse-glow">
-                                <span class="iconify text-red-500" data-icon="mdi:award-outline" data-width="32"></span>
+                            <div class="w-16 h-16 border border-[#0066cc]/20 flex items-center justify-center shrink-0 pulse-glow">
+                                <span class="iconify text-[#0066cc]" data-icon="mdi:award-outline" data-width="32"></span>
                             </div>
                             <div>
-                                <h3 class="font-syne text-lg font-medium text-red-400">4× BNSP Certified</h3>
-                                <p class="text-sm text-neutral-400 leading-relaxed mt-2">Memiliki empat sertifikasi kompetensi dari Badan Nasional Sertifikasi Profesi (BNSP) yang membuktikan kompetensi di bidang jaringan komputer, dari level teknisi muda hingga network designer.</p>
+                                <h3 class="font-syne text-lg font-medium text-[#0071e3]">4× BNSP Certified</h3>
+                                <p class="text-sm text-[#515154] leading-relaxed mt-2">Memiliki empat sertifikasi kompetensi dari Badan Nasional Sertifikasi Profesi (BNSP) yang membuktikan kompetensi di bidang jaringan komputer, dari level teknisi muda hingga network designer.</p>
                             </div>
                         </div>
                     </div>
@@ -759,55 +759,55 @@
     </section>
 
     <!-- Education Section -->
-    <section id="education" class="py-20 md:py-32 relative border-t border-white/5">
+    <section id="education" class="py-20 md:py-32 relative border-t bg-white rounded-2xl shadow-sm border border-black/5">
         <div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-12">
                 <div class="md:col-span-1">
-                    <p class="text-xs uppercase tracking-[0.3em] text-neutral-500 flex items-center gap-3 sticky top-24">
-                        <span class="w-8 h-px bg-red-500"></span>
+                    <p class="text-xs uppercase tracking-[0.3em] text-[#86868b] flex items-center gap-3 sticky top-24">
+                        <span class="w-8 h-px bg-[#0066cc]"></span>
                         Pendidikan
                     </p>
                 </div>
                 <div class="md:col-span-3">
                     <h2 class="font-syne text-3xl md:text-5xl font-medium tracking-tight mb-16 scroll-animate">
-                        Latar belakang <span class="text-red-500">akademik</span>
+                        Latar belakang <span class="text-[#0066cc]">akademik</span>
                     </h2>
 
                     <!-- Education 1 -->
-                    <div class="border border-white/5 p-8 md:p-10 mb-6 card-hover scroll-animate group">
+                    <div class="border bg-white rounded-2xl shadow-sm border border-black/5 p-8 md:p-10 mb-6 card-hover scroll-animate group">
                         <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
                             <div class="flex-1">
                                 <div class="flex items-center gap-3 mb-3">
-                                    <div class="w-10 h-10 bg-red-500/10 border border-red-500/20 flex items-center justify-center">
-                                        <span class="iconify text-red-500" data-icon="mdi:school" data-width="20"></span>
+                                    <div class="w-10 h-10 bg-[#0066cc]/10 border border-[#0066cc]/20 flex items-center justify-center">
+                                        <span class="iconify text-[#0066cc]" data-icon="mdi:school" data-width="20"></span>
                                     </div>
-                                    <span class="text-xs text-red-400 uppercase tracking-widest bg-red-500/10 px-3 py-1">Cum Laude</span>
+                                    <span class="text-xs text-[#0071e3] uppercase tracking-widest bg-[#0066cc]/10 px-3 py-1">Cum Laude</span>
                                 </div>
                                 <h3 class="font-syne text-xl md:text-2xl font-medium">Politeknik Negeri Tanah Laut</h3>
-                                <p class="text-sm text-neutral-400 mt-2">D4 Teknik Informatika — Prodi Teknologi Rekayasa Komputer Jaringan</p>
+                                <p class="text-sm text-[#515154] mt-2">D4 Teknik Informatika — Prodi Teknologi Rekayasa Komputer Jaringan</p>
                             </div>
                             <div class="text-right shrink-0">
-                                <p class="text-sm text-neutral-500 font-mono">2021 – 2025</p>
-                                <p class="font-syne text-3xl font-medium text-red-500 mt-2">3.51</p>
-                                <p class="text-xs text-neutral-500">IPK</p>
+                                <p class="text-sm text-[#86868b] font-mono">2021 – 2025</p>
+                                <p class="font-syne text-3xl font-medium text-[#0066cc] mt-2">3.51</p>
+                                <p class="text-xs text-[#86868b]">IPK</p>
                             </div>
                         </div>
                     </div>
 
                     <!-- Education 2 -->
-                    <div class="border border-white/5 p-8 md:p-10 card-hover scroll-animate group">
+                    <div class="border bg-white rounded-2xl shadow-sm border border-black/5 p-8 md:p-10 card-hover scroll-animate group">
                         <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
                             <div class="flex-1">
                                 <div class="flex items-center gap-3 mb-3">
-                                    <div class="w-10 h-10 bg-white/5 border border-white/10 flex items-center justify-center">
-                                        <span class="iconify text-neutral-400" data-icon="mdi:book-education-outline" data-width="20"></span>
+                                    <div class="w-10 h-10 bg-black/5 border border-black/10 flex items-center justify-center">
+                                        <span class="iconify text-[#515154]" data-icon="mdi:book-education-outline" data-width="20"></span>
                                     </div>
                                 </div>
                                 <h3 class="font-syne text-xl md:text-2xl font-medium">Pondok Pesantren Al Falah Putera</h3>
-                                <p class="text-sm text-neutral-400 mt-2">PKBM Angkasa (Paket C) — Jurusan IPS</p>
+                                <p class="text-sm text-[#515154] mt-2">PKBM Angkasa (Paket C) — Jurusan IPS</p>
                             </div>
                             <div class="text-right shrink-0">
-                                <p class="text-sm text-neutral-500 font-mono">2014 – 2021</p>
+                                <p class="text-sm text-[#86868b] font-mono">2014 – 2021</p>
                             </div>
                         </div>
                     </div>
@@ -817,141 +817,141 @@
     </section>
 
     <!-- Services / What I Can Do Section -->
-    <section class="py-20 md:py-32 relative border-t border-white/5">
+    <section class="py-20 md:py-32 relative border-t bg-white rounded-2xl shadow-sm border border-black/5">
         <div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
             <div class="text-center mb-16">
-                <p class="text-xs uppercase tracking-[0.3em] text-neutral-500 flex items-center justify-center gap-3 mb-6 scroll-animate">
-                    <span class="w-8 h-px bg-red-500"></span>
+                <p class="text-xs uppercase tracking-[0.3em] text-[#86868b] flex items-center justify-center gap-3 mb-6 scroll-animate">
+                    <span class="w-8 h-px bg-[#0066cc]"></span>
                     Layanan
-                    <span class="w-8 h-px bg-red-500"></span>
+                    <span class="w-8 h-px bg-[#0066cc]"></span>
                 </p>
                 <h2 class="font-syne text-3xl md:text-5xl font-medium tracking-tight scroll-animate">
-                    Apa yang bisa saya <span class="text-red-500">bantu</span>?
+                    Apa yang bisa saya <span class="text-[#0066cc]">bantu</span>?
                 </h2>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                <div class="border border-white/5 p-8 card-hover scroll-animate group">
-                    <div class="w-14 h-14 border border-red-500/20 flex items-center justify-center mb-6 group-hover:bg-red-500/10 transition-colors duration-500">
-                        <span class="iconify text-red-500" data-icon="mdi:lan" data-width="28"></span>
+                <div class="border bg-white rounded-2xl shadow-sm border border-black/5 p-8 card-hover scroll-animate group">
+                    <div class="w-14 h-14 border border-[#0066cc]/20 flex items-center justify-center mb-6 group-hover:bg-[#0066cc]/10 transition-colors duration-500">
+                        <span class="iconify text-[#0066cc]" data-icon="mdi:lan" data-width="28"></span>
                     </div>
                     <h3 class="font-syne text-lg font-medium mb-3">Instalasi & Konfigurasi Jaringan</h3>
-                    <p class="text-sm text-neutral-400 leading-relaxed">Pemasangan jaringan wired (UTP/Fiber Optic) dan wireless, konfigurasi router Mikrotik/Cisco, serta setup load balancing untuk optimalisasi bandwidth.</p>
+                    <p class="text-sm text-[#515154] leading-relaxed">Pemasangan jaringan wired (UTP/Fiber Optic) dan wireless, konfigurasi router Mikrotik/Cisco, serta setup load balancing untuk optimalisasi bandwidth.</p>
                 </div>
 
-                <div class="border border-white/5 p-8 card-hover scroll-animate group">
-                    <div class="w-14 h-14 border border-red-500/20 flex items-center justify-center mb-6 group-hover:bg-red-500/10 transition-colors duration-500">
-                        <span class="iconify text-red-500" data-icon="mdi:cctv" data-width="28"></span>
+                <div class="border bg-white rounded-2xl shadow-sm border border-black/5 p-8 card-hover scroll-animate group">
+                    <div class="w-14 h-14 border border-[#0066cc]/20 flex items-center justify-center mb-6 group-hover:bg-[#0066cc]/10 transition-colors duration-500">
+                        <span class="iconify text-[#0066cc]" data-icon="mdi:cctv" data-width="28"></span>
                     </div>
                     <h3 class="font-syne text-lg font-medium mb-3">CCTV & Keamanan</h3>
-                    <p class="text-sm text-neutral-400 leading-relaxed">Pemasangan dan konfigurasi sistem CCTV di titik-titik strategis, termasuk setup monitoring remote dan integrasi dengan jaringan yang ada.</p>
+                    <p class="text-sm text-[#515154] leading-relaxed">Pemasangan dan konfigurasi sistem CCTV di titik-titik strategis, termasuk setup monitoring remote dan integrasi dengan jaringan yang ada.</p>
                 </div>
 
-                <div class="border border-white/5 p-8 card-hover scroll-animate group">
-                    <div class="w-14 h-14 border border-red-500/20 flex items-center justify-center mb-6 group-hover:bg-red-500/10 transition-colors duration-500">
-                        <span class="iconify text-red-500" data-icon="mdi:server-security" data-width="28"></span>
+                <div class="border bg-white rounded-2xl shadow-sm border border-black/5 p-8 card-hover scroll-animate group">
+                    <div class="w-14 h-14 border border-[#0066cc]/20 flex items-center justify-center mb-6 group-hover:bg-[#0066cc]/10 transition-colors duration-500">
+                        <span class="iconify text-[#0066cc]" data-icon="mdi:server-security" data-width="28"></span>
                     </div>
                     <h3 class="font-syne text-lg font-medium mb-3">Server & Infrastruktur IT</h3>
-                    <p class="text-sm text-neutral-400 leading-relaxed">Setup dan manajemen server Linux/Windows, virtualisasi dengan Proxmox, implementasi Nextcloud, serta troubleshooting infrastruktur IT.</p>
+                    <p class="text-sm text-[#515154] leading-relaxed">Setup dan manajemen server Linux/Windows, virtualisasi dengan Proxmox, implementasi Nextcloud, serta troubleshooting infrastruktur IT.</p>
                 </div>
 
-                <div class="border border-white/5 p-8 card-hover scroll-animate group">
-                    <div class="w-14 h-14 border border-red-500/20 flex items-center justify-center mb-6 group-hover:bg-red-500/10 transition-colors duration-500">
-                        <span class="iconify text-red-500" data-icon="mdi:web" data-width="28"></span>
+                <div class="border bg-white rounded-2xl shadow-sm border border-black/5 p-8 card-hover scroll-animate group">
+                    <div class="w-14 h-14 border border-[#0066cc]/20 flex items-center justify-center mb-6 group-hover:bg-[#0066cc]/10 transition-colors duration-500">
+                        <span class="iconify text-[#0066cc]" data-icon="mdi:web" data-width="28"></span>
                     </div>
                     <h3 class="font-syne text-lg font-medium mb-3">Pengembangan Aplikasi Web</h3>
-                    <p class="text-sm text-neutral-400 leading-relaxed">Pembuatan aplikasi berbasis web menggunakan Python, HTML, CSS, dan JavaScript untuk kebutuhan bisnis dan otomasi proses.</p>
+                    <p class="text-sm text-[#515154] leading-relaxed">Pembuatan aplikasi berbasis web menggunakan Python, HTML, CSS, dan JavaScript untuk kebutuhan bisnis dan otomasi proses.</p>
                 </div>
 
-                <div class="border border-white/5 p-8 card-hover scroll-animate group">
-                    <div class="w-14 h-14 border border-red-500/20 flex items-center justify-center mb-6 group-hover:bg-red-500/10 transition-colors duration-500">
-                        <span class="iconify text-red-500" data-icon="mdi:chip" data-width="28"></span>
+                <div class="border bg-white rounded-2xl shadow-sm border border-black/5 p-8 card-hover scroll-animate group">
+                    <div class="w-14 h-14 border border-[#0066cc]/20 flex items-center justify-center mb-6 group-hover:bg-[#0066cc]/10 transition-colors duration-500">
+                        <span class="iconify text-[#0066cc]" data-icon="mdi:chip" data-width="28"></span>
                     </div>
                     <h3 class="font-syne text-lg font-medium mb-3">Implementasi IoT</h3>
-                    <p class="text-sm text-neutral-400 leading-relaxed">Integrasi teknologi Internet of Things untuk solusi smart home, smart office, atau otomasi industri yang terhubung dengan jaringan.</p>
+                    <p class="text-sm text-[#515154] leading-relaxed">Integrasi teknologi Internet of Things untuk solusi smart home, smart office, atau otomasi industri yang terhubung dengan jaringan.</p>
                 </div>
 
-                <div class="border border-white/5 p-8 card-hover scroll-animate group">
-                    <div class="w-14 h-14 border border-red-500/20 flex items-center justify-center mb-6 group-hover:bg-red-500/10 transition-colors duration-500">
-                        <span class="iconify text-red-500" data-icon="mdi:wrench-outline" data-width="28"></span>
+                <div class="border bg-white rounded-2xl shadow-sm border border-black/5 p-8 card-hover scroll-animate group">
+                    <div class="w-14 h-14 border border-[#0066cc]/20 flex items-center justify-center mb-6 group-hover:bg-[#0066cc]/10 transition-colors duration-500">
+                        <span class="iconify text-[#0066cc]" data-icon="mdi:wrench-outline" data-width="28"></span>
                     </div>
                     <h3 class="font-syne text-lg font-medium mb-3">Troubleshooting & Support</h3>
-                    <p class="text-sm text-neutral-400 leading-relaxed">Diagnosa dan perbaikan masalah jaringan, dukungan teknis IT harian, serta maintenance perangkat keras dan perangkat lunak.</p>
+                    <p class="text-sm text-[#515154] leading-relaxed">Diagnosa dan perbaikan masalah jaringan, dukungan teknis IT harian, serta maintenance perangkat keras dan perangkat lunak.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-20 md:py-32 relative border-t border-white/5">
+    <section id="contact" class="py-20 md:py-32 relative border-t bg-white rounded-2xl shadow-sm border border-black/5">
         <div class="absolute inset-0 dot-grid opacity-15"></div>
         <div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-20 relative z-10">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-12">
                 <div class="md:col-span-1">
-                    <p class="text-xs uppercase tracking-[0.3em] text-neutral-500 flex items-center gap-3 sticky top-24">
-                        <span class="w-8 h-px bg-red-500"></span>
+                    <p class="text-xs uppercase tracking-[0.3em] text-[#86868b] flex items-center gap-3 sticky top-24">
+                        <span class="w-8 h-px bg-[#0066cc]"></span>
                         Kontak
                     </p>
                 </div>
                 <div class="md:col-span-3">
                     <h2 class="font-syne text-3xl md:text-5xl font-medium tracking-tight mb-6 scroll-animate">
-                        Mari <span class="text-red-500">bekerja</span> bersama
+                        Mari <span class="text-[#0066cc]">bekerja</span> bersama
                     </h2>
-                    <p class="text-neutral-400 text-sm md:text-base leading-relaxed max-w-xl mb-16 scroll-animate">
+                    <p class="text-[#515154] text-sm md:text-base leading-relaxed max-w-xl mb-16 scroll-animate">
                         Tertarik dengan layanan saya? Jangan ragu untuk menghubungi saya melalui salah satu kanal berikut. Saya siap membantu kebutuhan infrastruktur jaringan dan IT Anda.
                     </p>
 
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-16">
                         <!-- Email -->
-                        <a href="mailto:plhr909@gmail.com" class="border border-white/5 p-6 card-hover scroll-animate group flex items-center gap-4">
-                            <div class="w-12 h-12 border border-red-500/20 flex items-center justify-center group-hover:bg-red-500/10 transition-colors duration-500 shrink-0">
-                                <span class="iconify text-red-500" data-icon="mdi:email-outline" data-width="22"></span>
+                        <a href="mailto:plhr909@gmail.com" class="border bg-white rounded-2xl shadow-sm border border-black/5 p-6 card-hover scroll-animate group flex items-center gap-4">
+                            <div class="w-12 h-12 border border-[#0066cc]/20 flex items-center justify-center group-hover:bg-[#0066cc]/10 transition-colors duration-500 shrink-0">
+                                <span class="iconify text-[#0066cc]" data-icon="mdi:email-outline" data-width="22"></span>
                             </div>
                             <div>
-                                <p class="text-xs text-neutral-500 uppercase tracking-widest">Email</p>
-                                <p class="text-sm text-white mt-1">plhr909@gmail.com</p>
+                                <p class="text-xs text-[#86868b] uppercase tracking-widest">Email</p>
+                                <p class="text-sm text-black mt-1">plhr909@gmail.com</p>
                             </div>
                         </a>
 
                         <!-- Phone -->
-                        <a href="tel:+6281348812407" class="border border-white/5 p-6 card-hover scroll-animate group flex items-center gap-4">
-                            <div class="w-12 h-12 border border-red-500/20 flex items-center justify-center group-hover:bg-red-500/10 transition-colors duration-500 shrink-0">
-                                <span class="iconify text-red-500" data-icon="mdi:phone-outline" data-width="22"></span>
+                        <a href="tel:+6281348812407" class="border bg-white rounded-2xl shadow-sm border border-black/5 p-6 card-hover scroll-animate group flex items-center gap-4">
+                            <div class="w-12 h-12 border border-[#0066cc]/20 flex items-center justify-center group-hover:bg-[#0066cc]/10 transition-colors duration-500 shrink-0">
+                                <span class="iconify text-[#0066cc]" data-icon="mdi:phone-outline" data-width="22"></span>
                             </div>
                             <div>
-                                <p class="text-xs text-neutral-500 uppercase tracking-widest">Telepon</p>
-                                <p class="text-sm text-white mt-1">+62 813-4881-2407</p>
+                                <p class="text-xs text-[#86868b] uppercase tracking-widest">Telepon</p>
+                                <p class="text-sm text-black mt-1">+62 813-4881-2407</p>
                             </div>
                         </a>
 
                         <!-- LinkedIn -->
-                        <a href="https://www.linkedin.com/in/m-farid-hafizh/" target="_blank" class="border border-white/5 p-6 card-hover scroll-animate group flex items-center gap-4">
-                            <div class="w-12 h-12 border border-red-500/20 flex items-center justify-center group-hover:bg-red-500/10 transition-colors duration-500 shrink-0">
-                                <span class="iconify text-red-500" data-icon="mdi:linkedin" data-width="22"></span>
+                        <a href="https://www.linkedin.com/in/m-farid-hafizh/" target="_blank" class="border bg-white rounded-2xl shadow-sm border border-black/5 p-6 card-hover scroll-animate group flex items-center gap-4">
+                            <div class="w-12 h-12 border border-[#0066cc]/20 flex items-center justify-center group-hover:bg-[#0066cc]/10 transition-colors duration-500 shrink-0">
+                                <span class="iconify text-[#0066cc]" data-icon="mdi:linkedin" data-width="22"></span>
                             </div>
                             <div>
-                                <p class="text-xs text-neutral-500 uppercase tracking-widest">LinkedIn</p>
-                                <p class="text-sm text-white mt-1">M. Farid Hafizh</p>
+                                <p class="text-xs text-[#86868b] uppercase tracking-widest">LinkedIn</p>
+                                <p class="text-sm text-black mt-1">M. Farid Hafizh</p>
                             </div>
                         </a>
 
                         <!-- Location -->
-                        <div class="border border-white/5 p-6 card-hover scroll-animate group flex items-center gap-4">
-                            <div class="w-12 h-12 border border-red-500/20 flex items-center justify-center group-hover:bg-red-500/10 transition-colors duration-500 shrink-0">
-                                <span class="iconify text-red-500" data-icon="mdi:map-marker-outline" data-width="22"></span>
+                        <div class="border bg-white rounded-2xl shadow-sm border border-black/5 p-6 card-hover scroll-animate group flex items-center gap-4">
+                            <div class="w-12 h-12 border border-[#0066cc]/20 flex items-center justify-center group-hover:bg-[#0066cc]/10 transition-colors duration-500 shrink-0">
+                                <span class="iconify text-[#0066cc]" data-icon="mdi:map-marker-outline" data-width="22"></span>
                             </div>
                             <div>
-                                <p class="text-xs text-neutral-500 uppercase tracking-widest">Lokasi</p>
-                                <p class="text-sm text-white mt-1">Tanah Laut, Kalsel</p>
+                                <p class="text-xs text-[#86868b] uppercase tracking-widest">Lokasi</p>
+                                <p class="text-sm text-black mt-1">Tanah Laut, Kalsel</p>
                             </div>
                         </div>
                     </div>
 
                     <!-- CTA -->
-                    <div class="border border-red-500/10 bg-red-500/[0.03] p-8 md:p-12 text-center scroll-animate">
+                    <div class="border border-[#0066cc]/10 bg-[#0066cc]/[0.03] p-8 md:p-12 text-center scroll-animate">
                         <h3 class="font-syne text-2xl md:text-3xl font-medium mb-4">Siap memulai proyek Anda?</h3>
-                        <p class="text-sm text-neutral-400 mb-8 max-w-md mx-auto">Hubungi saya sekarang untuk konsultasi gratis dan diskusi lebih lanjut mengenai kebutuhan IT Anda.</p>
-                        <a href="mailto:plhr909@gmail.com" class="group inline-flex items-center gap-3 px-8 py-4 bg-red-500 text-white text-xs uppercase tracking-widest font-medium hover:bg-white hover:text-black transition-all duration-300">
+                        <p class="text-sm text-[#515154] mb-8 max-w-md mx-auto">Hubungi saya sekarang untuk konsultasi gratis dan diskusi lebih lanjut mengenai kebutuhan IT Anda.</p>
+                        <a href="mailto:plhr909@gmail.com" class="group inline-flex items-center gap-3 px-8 py-4 bg-[#0066cc] text-white text-xs uppercase tracking-widest font-medium hover:bg-white hover:text-black transition-all duration-300">
                             Kirim Email
                             <span class="iconify group-hover:translate-x-1 transition-transform" data-icon="mdi:arrow-right" data-width="16"></span>
                         </a>
@@ -962,24 +962,24 @@
     </section>
 
     <!-- Footer -->
-    <footer class="border-t border-white/5">
+    <footer class="border-t bg-white rounded-2xl shadow-sm border border-black/5">
         <div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
             <div class="py-8 flex flex-col md:flex-row items-center justify-between gap-4">
                 <div class="flex items-center gap-6">
                     <a href="#hero" class="font-syne font-bold text-lg tracking-tight">
-                        <span class="text-red-500">M</span>FH<span class="text-red-500">.</span>
+                        <span class="text-[#0066cc]">M</span>FH<span class="text-[#0066cc]">.</span>
                     </a>
-                    <p class="text-xs text-neutral-600">© 2025 Muhammad Farid Hafizh. All rights reserved.</p>
+                    <p class="text-xs text-[#86868b]">© 2025 Muhammad Farid Hafizh. All rights reserved.</p>
                 </div>
                 <div class="flex items-center gap-4">
-                    <a href="https://www.linkedin.com/in/m-farid-hafizh/" target="_blank" class="w-9 h-9 border border-white/5 flex items-center justify-center hover:border-red-500/30 hover:bg-red-500/10 transition-all duration-300">
-                        <span class="iconify text-neutral-400 hover:text-red-500" data-icon="mdi:linkedin" data-width="18"></span>
+                    <a href="https://www.linkedin.com/in/m-farid-hafizh/" target="_blank" class="w-9 h-9 border bg-white rounded-2xl shadow-sm border border-black/5 flex items-center justify-center hover:border-[#0066cc]/30 hover:bg-[#0066cc]/10 transition-all duration-300">
+                        <span class="iconify text-[#515154] hover:text-[#0066cc]" data-icon="mdi:linkedin" data-width="18"></span>
                     </a>
-                    <a href="mailto:plhr909@gmail.com" class="w-9 h-9 border border-white/5 flex items-center justify-center hover:border-red-500/30 hover:bg-red-500/10 transition-all duration-300">
-                        <span class="iconify text-neutral-400 hover:text-red-500" data-icon="mdi:email-outline" data-width="18"></span>
+                    <a href="mailto:plhr909@gmail.com" class="w-9 h-9 border bg-white rounded-2xl shadow-sm border border-black/5 flex items-center justify-center hover:border-[#0066cc]/30 hover:bg-[#0066cc]/10 transition-all duration-300">
+                        <span class="iconify text-[#515154] hover:text-[#0066cc]" data-icon="mdi:email-outline" data-width="18"></span>
                     </a>
-                    <a href="tel:+6281348812407" class="w-9 h-9 border border-white/5 flex items-center justify-center hover:border-red-500/30 hover:bg-red-500/10 transition-all duration-300">
-                        <span class="iconify text-neutral-400 hover:text-red-500" data-icon="mdi:phone-outline" data-width="18"></span>
+                    <a href="tel:+6281348812407" class="w-9 h-9 border bg-white rounded-2xl shadow-sm border border-black/5 flex items-center justify-center hover:border-[#0066cc]/30 hover:bg-[#0066cc]/10 transition-all duration-300">
+                        <span class="iconify text-[#515154] hover:text-[#0066cc]" data-icon="mdi:phone-outline" data-width="18"></span>
                     </a>
                 </div>
             </div>
@@ -987,8 +987,8 @@
     </footer>
 
     <!-- Back to Top -->
-    <button id="back-to-top" class="fixed bottom-6 right-6 w-11 h-11 bg-red-500/10 border border-red-500/20 flex items-center justify-center z-40 opacity-0 translate-y-4 transition-all duration-300 hover:bg-red-500/20">
-        <span class="iconify text-red-500" data-icon="mdi:chevron-up" data-width="22"></span>
+    <button id="back-to-top" class="fixed bottom-6 right-6 w-11 h-11 bg-[#0066cc]/10 border border-[#0066cc]/20 flex items-center justify-center z-40 opacity-0 translate-y-4 transition-all duration-300 hover:bg-[#0066cc]/20">
+        <span class="iconify text-[#0066cc]" data-icon="mdi:chevron-up" data-width="22"></span>
     </button>
 
     <script>
@@ -1018,9 +1018,9 @@
         const navbar = document.getElementById('navbar');
         window.addEventListener('scroll', () => {
             if (window.scrollY > 50) {
-                navbar.style.background = 'rgba(10,10,10,0.85)';
+                navbar.style.background = 'rgba(255,255,255,0.85)';
                 navbar.style.backdropFilter = 'blur(8px)';
-                navbar.style.borderBottom = '1px solid rgba(255,255,255,0.05)';
+                navbar.style.borderBottom = '1px solid rgba(0,0,0,0.05)';
             } else {
                 navbar.style.background = 'transparent';
                 navbar.style.backdropFilter = 'none';
