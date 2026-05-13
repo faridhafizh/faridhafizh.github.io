@@ -6,6 +6,16 @@
     <title>Muhammad Farid Hafizh — Network & IT Professional</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/iconify/2.0.0/iconify.min.js"></script>
+    <meta name="description" content="Network & IT Professional with BNSP certifications. Specializing in network infrastructure, server management, and IT solutions.">
+    <meta name="keywords" content="Muhammad Farid Hafizh, Network Professional, IT Infrastructure, BNSP Certified, Mikrotik, Cisco, Linux Server, Tanah Laut, Kalimantan Selatan">
+    <meta name="author" content="Muhammad Farid Hafizh">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://faridhafizh.github.io/">
+    <meta property="og:title" content="Muhammad Farid Hafizh — Network & IT Professional">
+    <meta property="og:description" content="Network & IT Professional with BNSP certifications. Specializing in network infrastructure, server management, and IT solutions.">
+    <meta property="og:image" content="https://faridhafizh.github.io/hero_verification.png">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <script>
@@ -22,8 +32,95 @@
     </script>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: '-apple-system', 'BlinkMacSystemFont', sans-serif; background: #f5f5f7; color: #1d1d1f; overflow-x: hidden; }
+        body { font-family: '-apple-system', 'BlinkMacSystemFont', sans-serif; background: #f5f5f7; color: #1d1d1f; overflow-x: hidden; transition: background-color 0.3s ease, color 0.3s ease; }
         .font-syne { font-family: 'Syne', sans-serif; }
+
+        /* Dark Mode Styles */
+        body.dark-mode {
+            background: #0a0a0a;
+            color: #f5f5f7;
+        }
+
+        body.dark-mode .border-black\/5 {
+            border-color: rgba(255, 255, 255, 0.1);
+        }
+
+        body.dark-mode .bg-white {
+            background: #1c1c1e;
+        }
+
+        body.dark-mode .text-black {
+            color: #f5f5f7;
+        }
+
+        body.dark-mode .text-\[\#1d1d1f\] {
+            color: #f5f5f7;
+        }
+
+        body.dark-mode .text-\[\#515154\] {
+            color: #a1a1a6;
+        }
+
+        body.dark-mode .text-\[\#86868b\] {
+            color: #86868b;
+        }
+
+        body.dark-mode .border-black\/10 {
+            border-color: rgba(255, 255, 255, 0.15);
+        }
+
+        body.dark-mode .bg-black\/\[0\.02\] {
+            background: rgba(255, 255, 255, 0.02);
+        }
+
+        body.dark-mode .bg-black\/5 {
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        body.dark-mode .bg-black\/10 {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        body.dark-mode .shadow-sm {
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+        }
+
+        body.dark-mode ::-webkit-scrollbar-track {
+            background: #0a0a0a;
+        }
+
+        body.dark-mode ::-webkit-scrollbar-thumb {
+            background: #555;
+        }
+
+        body.dark-mode ::-webkit-scrollbar-thumb:hover {
+            background: #0066cc;
+        }
+
+        body.dark-mode .iconify {
+            color: inherit;
+        }
+
+        body.dark-mode .text-\[\#515154\] {
+            color: #a1a1a6;
+        }
+
+        body.dark-mode .hover\:text-black:hover {
+            color: #f5f5f7;
+        }
+
+        body.dark-mode .hover\:bg-white:hover {
+            background: #1c1c1e;
+        }
+
+        ::selection { background: rgba(0, 102, 204, 0.2); color: #0066cc; }
+        body.dark-mode ::selection { background: rgba(0, 102, 204, 0.4); color: #fff; }
+
+        .glass { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.3); }
+        body.dark-mode .glass { background: rgba(28, 28, 30, 0.7); border: 1px solid rgba(255, 255, 255, 0.1); }
+
+        .text-glow { text-shadow: 0 0 15px rgba(0, 102, 204, 0.3); }
+        body.dark-mode .text-glow { text-shadow: 0 0 20px rgba(0, 102, 204, 0.5); }
 
         @keyframes fadeInUpBlur {
             0% { opacity: 0; transform: translateY(30px); filter: blur(10px); }
@@ -135,14 +232,22 @@
                     <a href="#certifications" class="nav-link text-xs uppercase tracking-widest text-[#515154] hover:text-black transition-colors duration-300">Sertifikasi</a>
                     <a href="#education" class="nav-link text-xs uppercase tracking-widest text-[#515154] hover:text-black transition-colors duration-300">Pendidikan</a>
                     <a href="#contact" class="px-5 py-2.5 border border-black/10 text-xs uppercase tracking-widest hover:bg-white hover:text-black transition-all duration-300 font-medium">Kontak</a>
+                    <button id="dark-mode-toggle" class="w-9 h-9 border border-black/10 flex items-center justify-center hover:bg-white hover:text-black transition-all duration-300">
+                        <span class="iconify dark-mode-icon" data-icon="mdi:moon-outline" data-width="20"></span>
+                    </button>
                 </div>
-                <button id="mobile-menu-btn" class="md:hidden text-black">
-                    <span class="iconify" data-icon="mdi:menu" data-width="24"></span>
-                </button>
+                <div class="flex items-center gap-4 md:hidden">
+                    <button id="dark-mode-toggle-mobile" class="w-9 h-9 border border-black/10 flex items-center justify-center hover:bg-white hover:text-black transition-all duration-300">
+                        <span class="iconify dark-mode-icon" data-icon="mdi:moon-outline" data-width="20"></span>
+                    </button>
+                    <button id="mobile-menu-btn" class="text-black">
+                        <span class="iconify" data-icon="mdi:menu" data-width="24"></span>
+                    </button>
+                </div>
             </div>
         </div>
         <!-- Mobile Menu -->
-        <div id="mobile-menu" class="md:hidden hidden bg-white/80 backdrop-blur-sm border-t bg-white rounded-2xl shadow-sm border border-black/5">
+        <div id="mobile-menu" class="md:hidden hidden glass rounded-2xl shadow-lg mt-4 mx-6 overflow-hidden">
             <div class="px-6 py-6 flex flex-col gap-4">
                 <a href="#about" class="mobile-nav text-xs uppercase tracking-widest text-[#515154] hover:text-black transition-colors py-2">Tentang</a>
                 <a href="#skills" class="mobile-nav text-xs uppercase tracking-widest text-[#515154] hover:text-black transition-colors py-2">Keahlian</a>
@@ -179,7 +284,7 @@
             </div>
             <h1 class="font-syne font-medium tracking-tighter leading-[0.9] animate-entry delay-2">
                 <span class="block text-4xl sm:text-5xl md:text-7xl lg:text-8xl">Muhammad</span>
-                <span class="block text-4xl sm:text-5xl md:text-7xl lg:text-8xl">Farid<span class="text-[#0066cc]">.</span></span>
+                <span class="block text-4xl sm:text-5xl md:text-7xl lg:text-8xl">Farid<span class="text-[#0066cc] text-glow">.</span></span>
                 <span class="block text-4xl sm:text-5xl md:text-7xl lg:text-8xl text-[#86868b]">Hafizh</span>
             </h1>
             <div class="mt-8 md:mt-12 flex flex-col sm:flex-row gap-4 sm:gap-8 items-start animate-entry delay-3">
@@ -924,6 +1029,17 @@
                             </div>
                         </a>
 
+                        <!-- WhatsApp -->
+                        <a href="https://wa.me/6281348812407" target="_blank" rel="noopener noreferrer" class="border bg-white rounded-2xl shadow-sm border border-black/5 p-6 card-hover scroll-animate group flex items-center gap-4">
+                            <div class="w-12 h-12 border border-[#0066cc]/20 flex items-center justify-center group-hover:bg-[#0066cc]/10 transition-colors duration-500 shrink-0">
+                                <span class="iconify text-[#0066cc]" data-icon="mdi:whatsapp" data-width="22"></span>
+                            </div>
+                            <div>
+                                <p class="text-xs text-[#86868b] uppercase tracking-widest">WhatsApp</p>
+                                <p class="text-sm text-black mt-1">+62 813-4881-2407</p>
+                            </div>
+                        </a>
+
                         <!-- LinkedIn -->
                         <a href="https://www.linkedin.com/in/m-farid-hafizh/" target="_blank" rel="noopener noreferrer" class="border bg-white rounded-2xl shadow-sm border border-black/5 p-6 card-hover scroll-animate group flex items-center gap-4">
                             <div class="w-12 h-12 border border-[#0066cc]/20 flex items-center justify-center group-hover:bg-[#0066cc]/10 transition-colors duration-500 shrink-0">
@@ -978,6 +1094,9 @@
                     <a href="mailto:plhr909@gmail.com" class="w-9 h-9 border bg-white rounded-2xl shadow-sm border border-black/5 flex items-center justify-center hover:border-[#0066cc]/30 hover:bg-[#0066cc]/10 transition-all duration-300">
                         <span class="iconify text-[#515154] hover:text-[#0066cc]" data-icon="mdi:email-outline" data-width="18"></span>
                     </a>
+                    <a href="https://wa.me/6281348812407" target="_blank" rel="noopener noreferrer" class="w-9 h-9 border bg-white rounded-2xl shadow-sm border border-black/5 flex items-center justify-center hover:border-[#0066cc]/30 hover:bg-[#0066cc]/10 transition-all duration-300">
+                        <span class="iconify text-[#515154] hover:text-[#0066cc]" data-icon="mdi:whatsapp" data-width="18"></span>
+                    </a>
                     <a href="tel:+6281348812407" class="w-9 h-9 border bg-white rounded-2xl shadow-sm border border-black/5 flex items-center justify-center hover:border-[#0066cc]/30 hover:bg-[#0066cc]/10 transition-all duration-300">
                         <span class="iconify text-[#515154] hover:text-[#0066cc]" data-icon="mdi:phone-outline" data-width="18"></span>
                     </a>
@@ -1018,13 +1137,11 @@
         const navbar = document.getElementById('navbar');
         window.addEventListener('scroll', () => {
             if (window.scrollY > 50) {
-                navbar.style.background = 'rgba(255,255,255,0.85)';
-                navbar.style.backdropFilter = 'blur(8px)';
-                navbar.style.borderBottom = '1px solid rgba(0,0,0,0.05)';
+                navbar.classList.add('glass');
+                navbar.style.padding = '5px 0';
             } else {
-                navbar.style.background = 'transparent';
-                navbar.style.backdropFilter = 'none';
-                navbar.style.borderBottom = 'none';
+                navbar.classList.remove('glass');
+                navbar.style.padding = '0';
             }
         });
 
@@ -1147,6 +1264,36 @@
 
         const heroStats = document.querySelector('#hero .grid');
         if (heroStats) statObserver.observe(heroStats);
+
+        // Dark Mode Toggle Logic
+        const darkModeToggle = document.getElementById('dark-mode-toggle');
+        const darkModeToggleMobile = document.getElementById('dark-mode-toggle-mobile');
+        const body = document.body;
+        const darkModeIcons = document.querySelectorAll('.dark-mode-icon');
+
+        function updateDarkModeIcons(isDark) {
+            darkModeIcons.forEach(icon => {
+                icon.setAttribute('data-icon', isDark ? 'mdi:white-balance-sunny' : 'mdi:moon-outline');
+            });
+        }
+
+        function toggleDarkMode() {
+            const isDark = body.classList.toggle('dark-mode');
+            localStorage.setItem('theme', isDark ? 'dark' : 'light');
+            updateDarkModeIcons(isDark);
+        }
+
+        if (darkModeToggle) darkModeToggle.addEventListener('click', toggleDarkMode);
+        if (darkModeToggleMobile) darkModeToggleMobile.addEventListener('click', toggleDarkMode);
+
+        // Check for saved theme or system preference
+        const savedTheme = localStorage.getItem('theme');
+        const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+        if (savedTheme === 'dark' || (!savedTheme && systemPrefersDark)) {
+            body.classList.add('dark-mode');
+            updateDarkModeIcons(true);
+        }
     </script>
 </body>
 </html>
