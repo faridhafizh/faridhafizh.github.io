@@ -31,7 +31,7 @@ function Portrait() {
         <div className="relative aspect-[4/5]">
           {!failed ? (
             <img
-              src="/profile.jpg"
+              src="/Foto-Profile.png"
               alt={hero.portraitAlt}
               loading="eager"
               className="size-full object-cover"
