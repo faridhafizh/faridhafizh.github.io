@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <title>404 — Halaman tidak ditemukan · Muhammad Farid Hafizh</title>
+    <style>
+      :root {
+        --bg: #faf9fc;
+        --fg: #1c1b22;
+        --muted: #6b6a75;
+        --primary: #6d28d9;
+        --border: #e4e2ea;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #131317;
+          --fg: #f4f3f7;
+          --muted: #a1a0ab;
+          --primary: #a78bfa;
+          --border: #2a2933;
+        }
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        padding: 2rem;
+        background:
+          linear-gradient(to right, color-mix(in oklab, var(--fg) 5%, transparent) 1px, transparent 1px),
+          linear-gradient(to bottom, color-mix(in oklab, var(--fg) 5%, transparent) 1px, transparent 1px),
+          var(--bg);
+        background-size: 2rem 2rem, 2rem 2rem, auto;
+        color: var(--fg);
+        font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+      }
+      main {
+        width: 100%;
+        max-width: 34rem;
+        border: 1px solid var(--border);
+        border-radius: 1.25rem;
+        background: color-mix(in oklab, var(--bg) 92%, transparent);
+        backdrop-filter: blur(12px);
+        padding: 2.5rem;
+      }
+      .brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.65rem;
+        font-size: 0.8rem;
+        font-weight: 600;
+        letter-spacing: 0.02em;
+        text-decoration: none;
+        color: var(--fg);
+      }
+      .brand span:first-child {
+        display: grid;
+        place-items: center;
+        width: 2rem;
+        height: 2rem;
+        border-radius: 0.5rem;
+        background: var(--primary);
+        color: #fff;
+        font-size: 0.68rem;
+        letter-spacing: -0.02em;
+      }
+      .code {
+        margin: 2.5rem 0 0;
+        font-family: Georgia, "Times New Roman", serif;
+        font-style: italic;
+        font-size: 6rem;
+        line-height: 0.9;
+        color: var(--primary);
+      }
+      h1 {
+        margin: 1rem 0 0;
+        font-size: 1.5rem;
+        letter-spacing: -0.02em;
+      }
+      p {
+        margin: 0.6rem 0 0;
+        color: var(--muted);
+        font-size: 0.9rem;
+        line-height: 1.65;
+      }
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.65rem;
+        margin-top: 1.75rem;
+      }
+      a.button {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        border-radius: 999px;
+        padding: 0.65rem 1.15rem;
+        font-size: 0.82rem;
+        font-weight: 600;
+        text-decoration: none;
+        background: var(--primary);
+        color: #fff;
+      }
+      a.button.ghost {
+        background: transparent;
+        color: var(--fg);
+        border: 1px solid var(--border);
+      }
+      a.button:focus-visible {
+        outline: 2px solid var(--primary);
+        outline-offset: 2px;
+      }
+      footer {
+        margin-top: 2rem;
+        padding-top: 1.25rem;
+        border-top: 1px solid var(--border);
+        font-size: 0.72rem;
+        color: var(--muted);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <a class="brand" href="/"><span>MF</span>Muhammad Farid Hafizh</a>
+      <p class="code">404</p>
+      <h1>Halaman tidak ditemukan</h1>
+      <p>
+        Alamat ini tidak tersedia atau sudah dipindahkan. Kembali ke beranda untuk melihat
+        portofolio, pengalaman, dan proyek terbaru.
+      </p>
+      <p lang="en">This page doesn’t exist or has moved. Head back home to explore the portfolio.</p>
+      <div class="actions">
+        <a class="button" href="/">Kembali ke beranda</a>
+        <a class="button ghost" href="/Muhammad-Farid-Hafizh-CV.pdf">Unduh CV</a>
+      </div>
+      <footer>© <span id="year">2026</span> Muhammad Farid Hafizh · faridhafizh.github.io</footer>
+    </main>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear()
+    </script>
+  </body>
+</html>

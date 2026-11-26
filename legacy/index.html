@@ -1,0 +1,1299 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Farid Hafizh ΓÇö Network & IT Professional</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iconify/2.0.0/iconify.min.js"></script>
+    <meta name="description" content="Network & IT Professional with BNSP certifications. Specializing in network infrastructure, server management, and IT solutions.">
+    <meta name="keywords" content="Muhammad Farid Hafizh, Network Professional, IT Infrastructure, BNSP Certified, Mikrotik, Cisco, Linux Server, Tanah Laut, Kalimantan Selatan">
+    <meta name="author" content="Muhammad Farid Hafizh">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://faridhafizh.github.io/">
+    <meta property="og:title" content="Muhammad Farid Hafizh ΓÇö Network & IT Professional">
+    <meta property="og:description" content="Network & IT Professional with BNSP certifications. Specializing in network infrastructure, server management, and IT solutions.">
+    <meta property="og:image" content="https://faridhafizh.github.io/hero_verification.png">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        inter: ['Inter', 'sans-serif'],
+                        syne: ['Syne', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: '-apple-system', 'BlinkMacSystemFont', sans-serif; background: #f5f5f7; color: #1d1d1f; overflow-x: hidden; transition: background-color 0.3s ease, color 0.3s ease; }
+        .font-syne { font-family: 'Syne', sans-serif; }
+
+        /* Dark Mode Styles */
+        body.dark-mode {
+            background: #0a0a0a;
+            color: #f5f5f7;
+        }
+
+        body.dark-mode .border-black\/5 {
+            border-color: rgba(255, 255, 255, 0.1);
+        }
+
+        body.dark-mode .bg-white {
+            background: #1c1c1e;
+        }
+
+        body.dark-mode .text-black {
+            color: #f5f5f7;
+        }
+
+        body.dark-mode .text-\[\#1d1d1f\] {
+            color: #f5f5f7;
+        }
+
+        body.dark-mode .text-\[\#515154\] {
+            color: #a1a1a6;
+        }
+
+        body.dark-mode .text-\[\#86868b\] {
+            color: #86868b;
+        }
+
+        body.dark-mode .border-black\/10 {
+            border-color: rgba(255, 255, 255, 0.15);
+        }
+
+        body.dark-mode .bg-black\/\[0\.02\] {
+            background: rgba(255, 255, 255, 0.02);
+        }
+
+        body.dark-mode .bg-black\/5 {
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        body.dark-mode .bg-black\/10 {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        body.dark-mode .shadow-sm {
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+        }
+
+        body.dark-mode ::-webkit-scrollbar-track {
+            background: #0a0a0a;
+        }
+
+        body.dark-mode ::-webkit-scrollbar-thumb {
+            background: #555;
+        }
+
+        body.dark-mode ::-webkit-scrollbar-thumb:hover {
+            background: #0066cc;
+        }
+
+        body.dark-mode .iconify {
+            color: inherit;
+        }
+
+        body.dark-mode .text-\[\#515154\] {
+            color: #a1a1a6;
+        }
+
+        body.dark-mode .hover\:text-black:hover {
+            color: #f5f5f7;
+        }
+
+        body.dark-mode .hover\:bg-white:hover {
+            background: #1c1c1e;
+        }
+
+        ::selection { background: rgba(0, 102, 204, 0.2); color: #0066cc; }
+        body.dark-mode ::selection { background: rgba(0, 102, 204, 0.4); color: #fff; }
+
+        .glass { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.3); }
+        body.dark-mode .glass { background: rgba(28, 28, 30, 0.7); border: 1px solid rgba(255, 255, 255, 0.1); }
+
+        .text-glow { text-shadow: 0 0 15px rgba(0, 102, 204, 0.3); }
+        body.dark-mode .text-glow { text-shadow: 0 0 20px rgba(0, 102, 204, 0.5); }
+
+        @keyframes fadeInUpBlur {
+            0% { opacity: 0; transform: translateY(30px); filter: blur(10px); }
+            100% { opacity: 1; transform: translateY(0); filter: blur(0); }
+        }
+        .animate-entry { animation: fadeInUpBlur 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) both; }
+        .delay-1 { animation-delay: 0.1s; }
+        .delay-2 { animation-delay: 0.2s; }
+        .delay-3 { animation-delay: 0.3s; }
+        .delay-4 { animation-delay: 0.4s; }
+        .delay-5 { animation-delay: 0.5s; }
+        .delay-6 { animation-delay: 0.6s; }
+        .delay-7 { animation-delay: 0.7s; }
+        .delay-8 { animation-delay: 0.8s; }
+
+        @keyframes beam-drop {
+            0% { transform: translateY(-100%); }
+            100% { transform: translateY(500%); }
+        }
+        .beam { animation: beam-drop 5s cubic-bezier(0.4, 0, 0.2, 1) infinite; }
+
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        .marquee-track { animation: marquee 30s linear infinite; }
+        .marquee-track:hover { animation-play-state: paused; }
+
+        @keyframes pulse-glow {
+            0%, 100% { box-shadow: 0 0 10px rgba(0,102,204,0.2); }
+            50% { box-shadow: 0 0 25px rgba(0,102,204,0.4); }
+        }
+        .pulse-glow { animation: pulse-glow 3s ease-in-out infinite; }
+
+        @keyframes spin-slow {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        .spin-slow { animation: spin-slow 20s linear infinite; }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        .float { animation: float 4s ease-in-out infinite; }
+
+        .dot-grid {
+            background-image: radial-gradient(rgba(255,255,255,0.15) 1px, transparent 1px);
+            background-size: 24px 24px;
+            mask-image: radial-gradient(ellipse at center, black 40%, transparent 100%);
+            -webkit-mask-image: radial-gradient(ellipse at center, black 40%, transparent 100%);
+        }
+
+        .skill-bar {
+            transition: width 1.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+            width: 0;
+        }
+        .skill-bar.active { /* width set inline */ }
+
+        .timeline-line {
+            background: linear-gradient(to bottom, #0066cc, rgba(0,102,204,0.1));
+        }
+
+        html { scroll-behavior: smooth; }
+
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #f5f5f7; }
+        ::-webkit-scrollbar-thumb { background: #333; border-radius: 3px; }
+        ::-webkit-scrollbar-thumb:hover { background: #0066cc; }
+
+        .nav-active { color: #0066cc !important; }
+
+        .card-hover {
+            transition: all 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+        }
+        .card-hover:hover {
+            background: rgba(255,255,255,0.03);
+            transform: translateY(-2px);
+        }
+
+        .cert-badge {
+            transition: all 0.3s ease;
+        }
+        .cert-badge:hover {
+            border-color: rgba(0,102,204,0.5);
+            box-shadow: 0 0 20px rgba(0,102,204,0.1);
+        }
+    </style>
+</head>
+<body class="font-inter">
+
+    <!-- Ambient Background Glow -->
+    <div class="fixed inset-0 z-[-10] overflow-hidden">
+        <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-[#0066cc]/5 rounded-full blur-[120px]"></div>
+        <div class="absolute bottom-1/4 right-1/4 w-80 h-80 bg-[#0066cc]/3 rounded-full blur-[100px]"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-500">
+        <div class="max-w-7xl mx-auto px-6 md:px-8">
+            <div class="flex items-center justify-between py-5">
+                <a href="#hero" class="font-syne font-bold text-lg tracking-tight group">
+                    <span class="text-[#0066cc]">M</span>FH<span class="text-[#0066cc]">.</span>
+                </a>
+                <div class="hidden md:flex items-center gap-8">
+                    <a href="#about" class="nav-link text-xs uppercase tracking-widest text-[#515154] hover:text-black transition-colors duration-300">Tentang</a>
+                    <a href="#skills" class="nav-link text-xs uppercase tracking-widest text-[#515154] hover:text-black transition-colors duration-300">Keahlian</a>
+                    <a href="#experience" class="nav-link text-xs uppercase tracking-widest text-[#515154] hover:text-black transition-colors duration-300">Pengalaman</a>
+                    <a href="#certifications" class="nav-link text-xs uppercase tracking-widest text-[#515154] hover:text-black transition-colors duration-300">Sertifikasi</a>
+                    <a href="#education" class="nav-link text-xs uppercase tracking-widest text-[#515154] hover:text-black transition-colors duration-300">Pendidikan</a>
+                    <a href="#contact" class="px-5 py-2.5 border border-black/10 text-xs uppercase tracking-widest hover:bg-white hover:text-black transition-all duration-300 font-medium">Kontak</a>
+                    <button id="dark-mode-toggle" class="w-9 h-9 border border-black/10 flex items-center justify-center hover:bg-white hover:text-black transition-all duration-300">
+                        <span class="iconify dark-mode-icon" data-icon="mdi:moon-outline" data-width="20"></span>
+                    </button>
+                </div>
+                <div class="flex items-center gap-4 md:hidden">
+                    <button id="dark-mode-toggle-mobile" class="w-9 h-9 border border-black/10 flex items-center justify-center hover:bg-white hover:text-black transition-all duration-300">
+                        <span class="iconify dark-mode-icon" data-icon="mdi:moon-outline" data-width="20"></span>
+                    </button>
+                    <button id="mobile-menu-btn" class="text-black">
+                        <span class="iconify" data-icon="mdi:menu" data-width="24"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden glass rounded-2xl shadow-lg mt-4 mx-6 overflow-hidden">
+            <div class="px-6 py-6 flex flex-col gap-4">
+                <a href="#about" class="mobile-nav text-xs uppercase tracking-widest text-[#515154] hover:text-black transition-colors py-2">Tentang</a>
+                <a href="#skills" class="mobile-nav text-xs uppercase tracking-widest text-[#515154] hover:text-black transition-colors py-2">Keahlian</a>
+                <a href="#experience" class="mobile-nav text-xs uppercase tracking-widest text-[#515154] hover:text-black transition-colors py-2">Pengalaman</a>
+                <a href="#certifications" class="mobile-nav text-xs uppercase tracking-widest text-[#515154] hover:text-black transition-colors py-2">Sertifikasi</a>
+                <a href="#education" class="mobile-nav text-xs uppercase tracking-widest text-[#515154] hover:text-black transition-colors py-2">Pendidikan</a>
+                <a href="#contact" class="mobile-nav px-5 py-2.5 border border-black/10 text-xs uppercase tracking-widest hover:bg-white hover:text-black transition-all duration-300 font-medium text-center mt-2">Kontak</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="min-h-screen flex flex-col justify-between relative overflow-hidden">
+        <!-- Dot Grid -->
+        <div class="absolute inset-0 dot-grid opacity-30"></div>
+
+        <!-- Beam Lines -->
+        <div class="absolute top-0 left-[20%] w-px h-full overflow-hidden opacity-20">
+            <div class="w-full h-20 bg-gradient-to-b from-transparent via-[#0066cc] to-transparent beam"></div>
+        </div>
+        <div class="absolute top-0 left-[50%] w-px h-full overflow-hidden opacity-10">
+            <div class="w-full h-20 bg-gradient-to-b from-transparent via-[#0066cc] to-transparent beam" style="animation-delay: 2s;"></div>
+        </div>
+        <div class="absolute top-0 left-[80%] w-px h-full overflow-hidden opacity-15">
+            <div class="w-full h-20 bg-gradient-to-b from-transparent via-[#0066cc] to-transparent beam" style="animation-delay: 3.5s;"></div>
+        </div>
+
+        <div class="relative z-10 flex-1 flex flex-col justify-center px-6 md:px-12 lg:px-20 max-w-7xl mx-auto w-full">
+            <div class="animate-entry delay-1">
+                <p class="text-xs uppercase tracking-[0.3em] text-[#86868b] mb-6 flex items-center gap-3">
+                    <span class="w-8 h-px bg-[#0066cc]"></span>
+                    Network & IT Professional
+                </p>
+            </div>
+            <h1 class="font-syne font-medium tracking-tighter leading-[0.9] animate-entry delay-2">
+                <span class="block text-4xl sm:text-5xl md:text-7xl lg:text-8xl">Muhammad</span>
+                <span class="block text-4xl sm:text-5xl md:text-7xl lg:text-8xl">Farid<span class="text-[#0066cc] text-glow">.</span></span>
+                <span class="block text-4xl sm:text-5xl md:text-7xl lg:text-8xl text-[#86868b]">Hafizh</span>
+            </h1>
+            <div class="mt-8 md:mt-12 flex flex-col sm:flex-row gap-4 sm:gap-8 items-start animate-entry delay-3">
+                <p class="text-[#515154] text-sm md:text-base leading-relaxed max-w-md">
+                    Spesialis jaringan & infrastruktur IT dengan sertifikasi BNSP. Siap membantu kebutuhan teknologi Anda secara profesional.
+                </p>
+                <a href="#contact" class="group px-7 py-4 border border-black/10 text-xs uppercase tracking-widest hover:bg-white hover:text-black transition-all duration-300 font-medium flex items-center gap-3 whitespace-nowrap">
+                    Hubungi Saya
+                    <span class="iconify group-hover:translate-x-1 transition-transform" data-icon="mdi:arrow-right" data-width="16"></span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Bottom Stats -->
+        <div class="relative z-10 border-t border-black/10 animate-entry delay-5">
+            <div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-20 grid grid-cols-2 md:grid-cols-4 divide-x divide-white/10">
+                <div class="py-6 md:py-8 px-4 md:px-6">
+                    <p class="font-syne text-2xl md:text-3xl font-medium text-[#0066cc]">3.51</p>
+                    <p class="text-xs text-[#86868b] uppercase tracking-widest mt-1">IPK Cum Laude</p>
+                </div>
+                <div class="py-6 md:py-8 px-4 md:px-6">
+                    <p class="font-syne text-2xl md:text-3xl font-medium">4</p>
+                    <p class="text-xs text-[#86868b] uppercase tracking-widest mt-1">Sertifikasi BNSP</p>
+                </div>
+                <div class="py-6 md:py-8 px-4 md:px-6">
+                    <p class="font-syne text-2xl md:text-3xl font-medium">3+</p>
+                    <p class="text-xs text-[#86868b] uppercase tracking-widest mt-1">Pengalaman Magang</p>
+                </div>
+                <div class="py-6 md:py-8 px-4 md:px-6">
+                    <p class="font-syne text-2xl md:text-3xl font-medium">5+</p>
+                    <p class="text-xs text-[#86868b] uppercase tracking-widest mt-1">Proyek IT</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-24 md:bottom-8 right-6 md:right-12 flex flex-col items-center gap-2 animate-entry delay-6">
+            <div class="w-5 h-8 border bg-white rounded-2xl shadow-sm border border-black/10 rounded-full flex justify-center pt-1.5">
+                <div class="w-1 h-2 bg-[#0066cc] rounded-full animate-bounce"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 md:py-32 relative">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-12">
+                <div class="md:col-span-1">
+                    <p class="text-xs uppercase tracking-[0.3em] text-[#86868b] flex items-center gap-3 sticky top-24">
+                        <span class="w-8 h-px bg-[#0066cc]"></span>
+                        Tentang Saya
+                    </p>
+                </div>
+                <div class="md:col-span-3">
+                    <h2 class="font-syne text-3xl md:text-5xl font-medium tracking-tight mb-8 leading-tight scroll-animate">
+                        Membangun infrastruktur <span class="text-[#0066cc]">jaringan</span> yang andal & <span class="text-[#0066cc]">solusi IT</span> yang efektif
+                    </h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+                        <div class="scroll-animate">
+                            <p class="text-[#1d1d1f] text-sm md:text-base leading-relaxed">
+                                Lulusan D4 Teknik Informatika ΓÇô Prodi Teknologi Rekayasa Komputer Jaringan dengan IPK 3.51 <span class="text-[#0066cc] font-medium">(Cum Laude)</span>. Terampil dalam instalasi, troubleshooting, dan konfigurasi jaringan menggunakan Mikrotik maupun Cisco.
+                            </p>
+                        </div>
+                        <div class="scroll-animate">
+                            <p class="text-[#1d1d1f] text-sm md:text-base leading-relaxed">
+                                Berpengalaman dalam pengelolaan server Linux dan Windows, pengembangan aplikasi berbasis Python, HTML, CSS, JavaScript, serta implementasi teknologi IoT. Memiliki sertifikasi resmi BNSP dan pengalaman langsung dalam proyek pemasangan CCTV, instalasi jaringan wired (UTP/Fiber) maupun wireless.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Quick Info Cards -->
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-12">
+                        <div class="border bg-white rounded-2xl shadow-sm border border-black/5 p-6 card-hover scroll-animate">
+                            <span class="iconify text-[#0066cc] mb-3" data-icon="mdi:map-marker-outline" data-width="24"></span>
+                            <p class="text-xs text-[#86868b] uppercase tracking-widest mb-1">Lokasi</p>
+                            <p class="text-sm text-[#1d1d1f]">Tanah Laut, Kalimantan Selatan</p>
+                        </div>
+                        <div class="border bg-white rounded-2xl shadow-sm border border-black/5 p-6 card-hover scroll-animate">
+                            <span class="iconify text-[#0066cc] mb-3" data-icon="mdi:school-outline" data-width="24"></span>
+                            <p class="text-xs text-[#86868b] uppercase tracking-widest mb-1">Pendidikan</p>
+                            <p class="text-sm text-[#1d1d1f]">D4 Teknik Informatika</p>
+                        </div>
+                        <div class="border bg-white rounded-2xl shadow-sm border border-black/5 p-6 card-hover scroll-animate">
+                            <span class="iconify text-[#0066cc] mb-3" data-icon="mdi:certificate-outline" data-width="24"></span>
+                            <p class="text-xs text-[#86868b] uppercase tracking-widest mb-1">Sertifikasi</p>
+                            <p class="text-sm text-[#1d1d1f]">4├ù BNSP Certified</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Marquee -->
+    <section class="py-8 border-y border-black/5 bg-white overflow-hidden">
+        <div class="marquee-track flex items-center gap-8 whitespace-nowrap">
+            <span class="text-[#86868b] text-sm uppercase tracking-widest">Mikrotik</span>
+            <span class="text-[#0066cc] text-xs">Γùå</span>
+            <span class="text-[#86868b] text-sm uppercase tracking-widest">Cisco</span>
+            <span class="text-[#0066cc] text-xs">Γùå</span>
+            <span class="text-[#86868b] text-sm uppercase tracking-widest">Python</span>
+            <span class="text-[#0066cc] text-xs">Γùå</span>
+            <span class="text-[#86868b] text-sm uppercase tracking-widest">JavaScript</span>
+            <span class="text-[#0066cc] text-xs">Γùå</span>
+            <span class="text-[#86868b] text-sm uppercase tracking-widest">HTML & CSS</span>
+            <span class="text-[#0066cc] text-xs">Γùå</span>
+            <span class="text-[#86868b] text-sm uppercase tracking-widest">Linux Server</span>
+            <span class="text-[#0066cc] text-xs">Γùå</span>
+            <span class="text-[#86868b] text-sm uppercase tracking-widest">Windows Server</span>
+            <span class="text-[#0066cc] text-xs">Γùå</span>
+            <span class="text-[#86868b] text-sm uppercase tracking-widest">Proxmox</span>
+            <span class="text-[#0066cc] text-xs">Γùå</span>
+            <span class="text-[#86868b] text-sm uppercase tracking-widest">Nextcloud</span>
+            <span class="text-[#0066cc] text-xs">Γùå</span>
+            <span class="text-[#86868b] text-sm uppercase tracking-widest">IoT Integration</span>
+            <span class="text-[#0066cc] text-xs">Γùå</span>
+            <span class="text-[#86868b] text-sm uppercase tracking-widest">Fiber Optic</span>
+            <span class="text-[#0066cc] text-xs">Γùå</span>
+            <span class="text-[#86868b] text-sm uppercase tracking-widest">CCTV Installation</span>
+            <span class="text-[#0066cc] text-xs">Γùå</span>
+            <span class="text-[#86868b] text-sm uppercase tracking-widest">Load Balancing</span>
+            <span class="text-[#0066cc] text-xs">Γùå</span>
+            <!-- Duplicate for seamless loop -->
+            <span class="text-[#86868b] text-sm uppercase tracking-widest">Mikrotik</span>
+            <span class="text-[#0066cc] text-xs">Γùå</span>
+            <span class="text-[#86868b] text-sm uppercase tracking-widest">Cisco</span>
+            <span class="text-[#0066cc] text-xs">Γùå</span>
+            <span class="text-[#86868b] text-sm uppercase tracking-widest">Python</span>
+            <span class="text-[#0066cc] text-xs">Γùå</span>
+            <span class="text-[#86868b] text-sm uppercase tracking-widest">JavaScript</span>
+            <span class="text-[#0066cc] text-xs">Γùå</span>
+            <span class="text-[#86868b] text-sm uppercase tracking-widest">HTML & CSS</span>
+            <span class="text-[#0066cc] text-xs">Γùå</span>
+            <span class="text-[#86868b] text-sm uppercase tracking-widest">Linux Server</span>
+            <span class="text-[#0066cc] text-xs">Γùå</span>
+            <span class="text-[#86868b] text-sm uppercase tracking-widest">Windows Server</span>
+            <span class="text-[#0066cc] text-xs">Γùå</span>
+            <span class="text-[#86868b] text-sm uppercase tracking-widest">Proxmox</span>
+            <span class="text-[#0066cc] text-xs">Γùå</span>
+            <span class="text-[#86868b] text-sm uppercase tracking-widest">Nextcloud</span>
+            <span class="text-[#0066cc] text-xs">Γùå</span>
+            <span class="text-[#86868b] text-sm uppercase tracking-widest">IoT Integration</span>
+            <span class="text-[#0066cc] text-xs">Γùå</span>
+            <span class="text-[#86868b] text-sm uppercase tracking-widest">Fiber Optic</span>
+            <span class="text-[#0066cc] text-xs">Γùå</span>
+            <span class="text-[#86868b] text-sm uppercase tracking-widest">CCTV Installation</span>
+            <span class="text-[#0066cc] text-xs">Γùå</span>
+            <span class="text-[#86868b] text-sm uppercase tracking-widest">Load Balancing</span>
+            <span class="text-[#0066cc] text-xs">Γùå</span>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 md:py-32 relative">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-12">
+                <div class="md:col-span-1">
+                    <p class="text-xs uppercase tracking-[0.3em] text-[#86868b] flex items-center gap-3 sticky top-24">
+                        <span class="w-8 h-px bg-[#0066cc]"></span>
+                        Keahlian
+                    </p>
+                </div>
+                <div class="md:col-span-3">
+                    <h2 class="font-syne text-3xl md:text-5xl font-medium tracking-tight mb-16 scroll-animate">
+                        Kompetensi <span class="text-[#0066cc]">teknis</span> yang teruji
+                    </h2>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <!-- Skill Category 1: Networking -->
+                        <div class="border bg-white rounded-2xl shadow-sm border border-black/5 p-8 card-hover scroll-animate group">
+                            <div class="flex items-start justify-between mb-6">
+                                <div class="w-12 h-12 border border-[#0066cc]/20 flex items-center justify-center group-hover:bg-[#0066cc]/10 transition-colors duration-500">
+                                    <span class="iconify text-[#0066cc]" data-icon="mdi:server-network" data-width="24"></span>
+                                </div>
+                                <span class="text-xs text-[#86868b] font-mono">01</span>
+                            </div>
+                            <h3 class="font-syne text-xl font-medium mb-4">Jaringan</h3>
+                            <p class="text-[#515154] text-sm leading-relaxed mb-6">Instalasi & troubleshooting jaringan kabel maupun nirkabel, konfigurasi router & switch Mikrotik dan Cisco.</p>
+                            <div class="space-y-3">
+                                <div>
+                                    <div class="flex justify-between text-xs text-[#86868b] mb-1">
+                                        <span>Mikrotik</span><span>95%</span>
+                                    </div>
+                                    <div class="h-1 bg-black/5 rounded-full overflow-hidden">
+                                        <div class="skill-bar h-full bg-gradient-to-r from-[#0066cc] to-[#3385ff] rounded-full" data-width="95%"></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="flex justify-between text-xs text-[#86868b] mb-1">
+                                        <span>Cisco</span><span>85%</span>
+                                    </div>
+                                    <div class="h-1 bg-black/5 rounded-full overflow-hidden">
+                                        <div class="skill-bar h-full bg-gradient-to-r from-[#0066cc] to-[#3385ff] rounded-full" data-width="85%"></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="flex justify-between text-xs text-[#86868b] mb-1">
+                                        <span>Fiber Optic / UTP</span><span>90%</span>
+                                    </div>
+                                    <div class="h-1 bg-black/5 rounded-full overflow-hidden">
+                                        <div class="skill-bar h-full bg-gradient-to-r from-[#0066cc] to-[#3385ff] rounded-full" data-width="90%"></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="flex justify-between text-xs text-[#86868b] mb-1">
+                                        <span>Wireless Network</span><span>88%</span>
+                                    </div>
+                                    <div class="h-1 bg-black/5 rounded-full overflow-hidden">
+                                        <div class="skill-bar h-full bg-gradient-to-r from-[#0066cc] to-[#3385ff] rounded-full" data-width="88%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Skill Category 2: Systems & Server -->
+                        <div class="border bg-white rounded-2xl shadow-sm border border-black/5 p-8 card-hover scroll-animate group">
+                            <div class="flex items-start justify-between mb-6">
+                                <div class="w-12 h-12 border border-[#0066cc]/20 flex items-center justify-center group-hover:bg-[#0066cc]/10 transition-colors duration-500">
+                                    <span class="iconify text-[#0066cc]" data-icon="mdi:harddisk" data-width="24"></span>
+                                </div>
+                                <span class="text-xs text-[#86868b] font-mono">02</span>
+                            </div>
+                            <h3 class="font-syne text-xl font-medium mb-4">Sistem & Server</h3>
+                            <p class="text-[#515154] text-sm leading-relaxed mb-6">Pengelolaan server berbasis Linux dan Windows, virtualisasi dengan Proxmox, serta cloud storage Nextcloud.</p>
+                            <div class="space-y-3">
+                                <div>
+                                    <div class="flex justify-between text-xs text-[#86868b] mb-1">
+                                        <span>Linux Server</span><span>88%</span>
+                                    </div>
+                                    <div class="h-1 bg-black/5 rounded-full overflow-hidden">
+                                        <div class="skill-bar h-full bg-gradient-to-r from-[#0066cc] to-[#3385ff] rounded-full" data-width="88%"></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="flex justify-between text-xs text-[#86868b] mb-1">
+                                        <span>Windows Server</span><span>82%</span>
+                                    </div>
+                                    <div class="h-1 bg-black/5 rounded-full overflow-hidden">
+                                        <div class="skill-bar h-full bg-gradient-to-r from-[#0066cc] to-[#3385ff] rounded-full" data-width="82%"></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="flex justify-between text-xs text-[#86868b] mb-1">
+                                        <span>Proxmox VE</span><span>80%</span>
+                                    </div>
+                                    <div class="h-1 bg-black/5 rounded-full overflow-hidden">
+                                        <div class="skill-bar h-full bg-gradient-to-r from-[#0066cc] to-[#3385ff] rounded-full" data-width="80%"></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="flex justify-between text-xs text-[#86868b] mb-1">
+                                        <span>Nextcloud</span><span>78%</span>
+                                    </div>
+                                    <div class="h-1 bg-black/5 rounded-full overflow-hidden">
+                                        <div class="skill-bar h-full bg-gradient-to-r from-[#0066cc] to-[#3385ff] rounded-full" data-width="78%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Skill Category 3: Programming & IoT -->
+                        <div class="border bg-white rounded-2xl shadow-sm border border-black/5 p-8 card-hover scroll-animate group">
+                            <div class="flex items-start justify-between mb-6">
+                                <div class="w-12 h-12 border border-[#0066cc]/20 flex items-center justify-center group-hover:bg-[#0066cc]/10 transition-colors duration-500">
+                                    <span class="iconify text-[#0066cc]" data-icon="mdi:code-braces" data-width="24"></span>
+                                </div>
+                                <span class="text-xs text-[#86868b] font-mono">03</span>
+                            </div>
+                            <h3 class="font-syne text-xl font-medium mb-4">Pemrograman & IoT</h3>
+                            <p class="text-[#515154] text-sm leading-relaxed mb-6">Pengembangan aplikasi berbasis web dan integrasi teknologi Internet of Things untuk solusi smart system.</p>
+                            <div class="space-y-3">
+                                <div>
+                                    <div class="flex justify-between text-xs text-[#86868b] mb-1">
+                                        <span>Python</span><span>85%</span>
+                                    </div>
+                                    <div class="h-1 bg-black/5 rounded-full overflow-hidden">
+                                        <div class="skill-bar h-full bg-gradient-to-r from-[#0066cc] to-[#3385ff] rounded-full" data-width="85%"></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="flex justify-between text-xs text-[#86868b] mb-1">
+                                        <span>HTML & CSS</span><span>90%</span>
+                                    </div>
+                                    <div class="h-1 bg-black/5 rounded-full overflow-hidden">
+                                        <div class="skill-bar h-full bg-gradient-to-r from-[#0066cc] to-[#3385ff] rounded-full" data-width="90%"></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="flex justify-between text-xs text-[#86868b] mb-1">
+                                        <span>JavaScript</span><span>78%</span>
+                                    </div>
+                                    <div class="h-1 bg-black/5 rounded-full overflow-hidden">
+                                        <div class="skill-bar h-full bg-gradient-to-r from-[#0066cc] to-[#3385ff] rounded-full" data-width="78%"></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="flex justify-between text-xs text-[#86868b] mb-1">
+                                        <span>IoT Integration</span><span>80%</span>
+                                    </div>
+                                    <div class="h-1 bg-black/5 rounded-full overflow-hidden">
+                                        <div class="skill-bar h-full bg-gradient-to-r from-[#0066cc] to-[#3385ff] rounded-full" data-width="80%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Skill Category 4: Software & Language -->
+                        <div class="border bg-white rounded-2xl shadow-sm border border-black/5 p-8 card-hover scroll-animate group">
+                            <div class="flex items-start justify-between mb-6">
+                                <div class="w-12 h-12 border border-[#0066cc]/20 flex items-center justify-center group-hover:bg-[#0066cc]/10 transition-colors duration-500">
+                                    <span class="iconify text-[#0066cc]" data-icon="mdi:translate" data-width="24"></span>
+                                </div>
+                                <span class="text-xs text-[#86868b] font-mono">04</span>
+                            </div>
+                            <h3 class="font-syne text-xl font-medium mb-4">Perangkat Lunak & Bahasa</h3>
+                            <p class="text-[#515154] text-sm leading-relaxed mb-6">Mahir menggunakan Microsoft Office untuk kebutuhan administrasi dan dokumentasi teknis, serta bilingual.</p>
+                            <div class="space-y-4 mt-6">
+                                <div class="flex items-center gap-3">
+                                    <span class="iconify text-[#86868b]" data-icon="mdi:file-word-outline" data-width="20"></span>
+                                    <span class="text-sm text-[#1d1d1f]">Microsoft Word</span>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <span class="iconify text-[#86868b]" data-icon="mdi:file-powerpoint-outline" data-width="20"></span>
+                                    <span class="text-sm text-[#1d1d1f]">Microsoft PowerPoint</span>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <span class="iconify text-[#86868b]" data-icon="mdi:file-excel-outline" data-width="20"></span>
+                                    <span class="text-sm text-[#1d1d1f]">Microsoft Excel</span>
+                                </div>
+                                <div class="h-px bg-black/5 my-2"></div>
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center gap-2">
+                                        <span class="text-sm">≡ƒç«≡ƒç⌐</span>
+                                        <span class="text-sm text-[#1d1d1f]">Bahasa Indonesia</span>
+                                    </div>
+                                    <span class="text-xs text-[#0066cc] font-medium">Native</span>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center gap-2">
+                                        <span class="text-sm">≡ƒç¼≡ƒçº</span>
+                                        <span class="text-sm text-[#1d1d1f]">English</span>
+                                    </div>
+                                    <span class="text-xs text-[#86868b] font-medium">TOEFL Certified</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 md:py-32 relative">
+        <div class="absolute inset-0 dot-grid opacity-20"></div>
+        <div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-20 relative z-10">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-12">
+                <div class="md:col-span-1">
+                    <p class="text-xs uppercase tracking-[0.3em] text-[#86868b] flex items-center gap-3 sticky top-24">
+                        <span class="w-8 h-px bg-[#0066cc]"></span>
+                        Pengalaman
+                    </p>
+                </div>
+                <div class="md:col-span-3">
+                    <h2 class="font-syne text-3xl md:text-5xl font-medium tracking-tight mb-16 scroll-animate">
+                        Pengalaman <span class="text-[#0066cc]">kerja</span> langsung
+                    </h2>
+
+                    <!-- Timeline -->
+                    <div class="relative">
+                        <!-- Timeline Line -->
+                        <div class="absolute left-0 md:left-6 top-0 bottom-0 w-px "></div>
+
+                        <!-- Experience 1 -->
+                        <div class="relative pl-8 md:pl-20 pb-16 scroll-animate">
+                            <div class="absolute left-0 md:left-6 top-1 w-3 h-3 bg-[#0066cc] rounded-full -translate-x-1.5 pulse-glow"></div>
+                            <div class="absolute left-0 md:left-6 top-1 w-6 h-6 border border-[#0066cc]/30 rounded-full -translate-x-3 animate-ping"></div>
+                            <div class="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
+                                <div>
+                                    <p class="text-xs text-[#0071e3] uppercase tracking-widest mb-2">Maret ΓÇô Mei 2024</p>
+                                    <h3 class="font-syne text-xl md:text-2xl font-medium">PT PLN UPT Banjarbaru</h3>
+                                    <p class="text-sm text-[#515154] mt-1">IT Staff ΓÇö Bidang Renev</p>
+                                </div>
+                            </div>
+                            <div class="border bg-white rounded-2xl shadow-sm border border-black/5 bg-black/[0.02] p-6 space-y-3">
+                                <div class="flex items-start gap-3">
+                                    <span class="iconify text-[#0066cc] mt-0.5 shrink-0" data-icon="mdi:chevron-right" data-width="16"></span>
+                                    <p class="text-sm text-[#1d1d1f]">Melakukan pemasangan CCTV di 4 titik strategis untuk meningkatkan keamanan area operasional.</p>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <span class="iconify text-[#0066cc] mt-0.5 shrink-0" data-icon="mdi:chevron-right" data-width="16"></span>
+                                    <p class="text-sm text-[#1d1d1f]">Perbaikan dan manajemen router Mikrotik melalui AnyDesk/WinBox untuk pemeliharaan jaringan remote.</p>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <span class="iconify text-[#0066cc] mt-0.5 shrink-0" data-icon="mdi:chevron-right" data-width="16"></span>
+                                    <p class="text-sm text-[#1d1d1f]">Monitoring dan troubleshooting jaringan internal untuk memastikan konektivitas stabil.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Experience 2 -->
+                        <div class="relative pl-8 md:pl-20 pb-16 scroll-animate">
+                            <div class="absolute left-0 md:left-6 top-1 w-3 h-3 bg-[#0066cc]/60 rounded-full -translate-x-1.5"></div>
+                            <div class="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
+                                <div>
+                                    <p class="text-xs text-[#0071e3]/60 uppercase tracking-widest mb-2">Januari ΓÇô Februari 2024</p>
+                                    <h3 class="font-syne text-xl md:text-2xl font-medium">Inspektorat Daerah Prov. Kalsel</h3>
+                                    <p class="text-sm text-[#515154] mt-1">IT Staff</p>
+                                </div>
+                            </div>
+                            <div class="border bg-white rounded-2xl shadow-sm border border-black/5 bg-black/[0.02] p-6 space-y-3">
+                                <div class="flex items-start gap-3">
+                                    <span class="iconify text-[#0066cc]/60 mt-0.5 shrink-0" data-icon="mdi:chevron-right" data-width="16"></span>
+                                    <p class="text-sm text-[#1d1d1f]">Memberikan dukungan teknis TI harian untuk seluruh pegawai inspektorat.</p>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <span class="iconify text-[#0066cc]/60 mt-0.5 shrink-0" data-icon="mdi:chevron-right" data-width="16"></span>
+                                    <p class="text-sm text-[#1d1d1f]">Instalasi perangkat keras untuk mendukung kelancaran operasional kantor.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Experience 3 -->
+                        <div class="relative pl-8 md:pl-20 scroll-animate">
+                            <div class="absolute left-0 md:left-6 top-1 w-3 h-3 bg-[#0066cc]/40 rounded-full -translate-x-1.5"></div>
+                            <div class="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
+                                <div>
+                                    <p class="text-xs text-[#0071e3]/40 uppercase tracking-widest mb-2">Oktober ΓÇô November 2022</p>
+                                    <h3 class="font-syne text-xl md:text-2xl font-medium">Kantor Desa Kait-Kait Baru</h3>
+                                    <p class="text-sm text-[#515154] mt-1">Teknisi Jaringan</p>
+                                </div>
+                            </div>
+                            <div class="border bg-white rounded-2xl shadow-sm border border-black/5 bg-black/[0.02] p-6 space-y-3">
+                                <div class="flex items-start gap-3">
+                                    <span class="iconify text-[#0066cc]/40 mt-0.5 shrink-0" data-icon="mdi:chevron-right" data-width="16"></span>
+                                    <p class="text-sm text-[#1d1d1f]">Instalasi jaringan wireless (hotspot) di 3 titik kantor balai desa untuk meningkatkan akses internet.</p>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <span class="iconify text-[#0066cc]/40 mt-0.5 shrink-0" data-icon="mdi:chevron-right" data-width="16"></span>
+                                    <p class="text-sm text-[#1d1d1f]">Mengintegrasikan jaringan IconNet/ICON+ (PLN) dan IndiHome untuk redundansi koneksi.</p>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <span class="iconify text-[#0066cc]/40 mt-0.5 shrink-0" data-icon="mdi:chevron-right" data-width="16"></span>
+                                    <p class="text-sm text-[#1d1d1f]">Konfigurasi load balance pada router Mikrotik untuk optimalisasi bandwidth.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Organization -->
+                    <div class="mt-20 border bg-white rounded-2xl shadow-sm border border-black/5 p-8 card-hover scroll-animate">
+                        <div class="flex items-center gap-4 mb-4">
+                            <div class="w-12 h-12 border border-[#0066cc]/20 flex items-center justify-center">
+                                <span class="iconify text-[#0066cc]" data-icon="mdi:account-group-outline" data-width="24"></span>
+                            </div>
+                            <div>
+                                <h3 class="font-syne text-lg font-medium">HIMA Prodi TRKJ</h3>
+                                <p class="text-xs text-[#86868b] uppercase tracking-widest">Anggota Bidang Minat & Bakat ΓÇó 2021ΓÇô2023</p>
+                            </div>
+                        </div>
+                        <p class="text-sm text-[#515154] leading-relaxed">Aktif berkontribusi dalam organisasi Himpunan Mahasiswa Prodi Teknologi Rekayasa Komputer Jaringan, mengelola kegiatan minat dan bakat mahasiswa.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="py-20 md:py-32 relative border-t bg-white rounded-2xl shadow-sm border border-black/5">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-12">
+                <div class="md:col-span-1">
+                    <p class="text-xs uppercase tracking-[0.3em] text-[#86868b] flex items-center gap-3 sticky top-24">
+                        <span class="w-8 h-px bg-[#0066cc]"></span>
+                        Sertifikasi
+                    </p>
+                </div>
+                <div class="md:col-span-3">
+                    <h2 class="font-syne text-3xl md:text-5xl font-medium tracking-tight mb-16 scroll-animate">
+                        Sertifikasi <span class="text-[#0066cc]">resmi</span> yang dimiliki
+                    </h2>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <!-- Cert 1 -->
+                        <div class="cert-badge border bg-white rounded-2xl shadow-sm border border-black/5 p-6 flex items-start gap-4 scroll-animate group">
+                            <div class="w-10 h-10 bg-[#0066cc]/10 border border-[#0066cc]/20 flex items-center justify-center shrink-0 group-hover:bg-[#0066cc]/20 transition-colors">
+                                <span class="iconify text-[#0066cc]" data-icon="mdi:shield-check-outline" data-width="20"></span>
+                            </div>
+                            <div>
+                                <p class="text-sm font-medium text-black">Network Designer</p>
+                                <p class="text-xs text-[#86868b] mt-1">BNSP ΓÇó 2025</p>
+                            </div>
+                        </div>
+
+                        <!-- Cert 2 -->
+                        <div class="cert-badge border bg-white rounded-2xl shadow-sm border border-black/5 p-6 flex items-start gap-4 scroll-animate group">
+                            <div class="w-10 h-10 bg-[#0066cc]/10 border border-[#0066cc]/20 flex items-center justify-center shrink-0 group-hover:bg-[#0066cc]/20 transition-colors">
+                                <span class="iconify text-[#0066cc]" data-icon="mdi:shield-check-outline" data-width="20"></span>
+                            </div>
+                            <div>
+                                <p class="text-sm font-medium text-black">Network Administrator Madya</p>
+                                <p class="text-xs text-[#86868b] mt-1">BNSP ΓÇó 2024</p>
+                            </div>
+                        </div>
+
+                        <!-- Cert 3 -->
+                        <div class="cert-badge border bg-white rounded-2xl shadow-sm border border-black/5 p-6 flex items-start gap-4 scroll-animate group">
+                            <div class="w-10 h-10 bg-[#0066cc]/10 border border-[#0066cc]/20 flex items-center justify-center shrink-0 group-hover:bg-[#0066cc]/20 transition-colors">
+                                <span class="iconify text-[#0066cc]" data-icon="mdi:shield-check-outline" data-width="20"></span>
+                            </div>
+                            <div>
+                                <p class="text-sm font-medium text-black">Junior Network Administrator</p>
+                                <p class="text-xs text-[#86868b] mt-1">BNSP ΓÇó 2023</p>
+                            </div>
+                        </div>
+
+                        <!-- Cert 4 -->
+                        <div class="cert-badge border bg-white rounded-2xl shadow-sm border border-black/5 p-6 flex items-start gap-4 scroll-animate group">
+                            <div class="w-10 h-10 bg-[#0066cc]/10 border border-[#0066cc]/20 flex items-center justify-center shrink-0 group-hover:bg-[#0066cc]/20 transition-colors">
+                                <span class="iconify text-[#0066cc]" data-icon="mdi:shield-check-outline" data-width="20"></span>
+                            </div>
+                            <div>
+                                <p class="text-sm font-medium text-black">Teknisi Muda Jaringan Komputer</p>
+                                <p class="text-xs text-[#86868b] mt-1">BNSP ΓÇó 2022</p>
+                            </div>
+                        </div>
+
+                        <!-- Cert 5 -->
+                        <div class="cert-badge border bg-white rounded-2xl shadow-sm border border-black/5 p-6 flex items-start gap-4 scroll-animate group">
+                            <div class="w-10 h-10 bg-black/5 border border-black/10 flex items-center justify-center shrink-0 group-hover:bg-black/10 transition-colors">
+                                <span class="iconify text-[#515154]" data-icon="mdi:file-certificate-outline" data-width="20"></span>
+                            </div>
+                            <div>
+                                <p class="text-sm font-medium text-black">Sertifikat PKL</p>
+                                <p class="text-xs text-[#86868b] mt-1">PT PLN UPT Banjarbaru ΓÇó 2024</p>
+                            </div>
+                        </div>
+
+                        <!-- Cert 6 -->
+                        <div class="cert-badge border bg-white rounded-2xl shadow-sm border border-black/5 p-6 flex items-start gap-4 scroll-animate group">
+                            <div class="w-10 h-10 bg-black/5 border border-black/10 flex items-center justify-center shrink-0 group-hover:bg-black/10 transition-colors">
+                                <span class="iconify text-[#515154]" data-icon="mdi:lightbulb-outline" data-width="20"></span>
+                            </div>
+                            <div>
+                                <p class="text-sm font-medium text-black">Wirausaha Merdeka</p>
+                                <p class="text-xs text-[#86868b] mt-1">MBKM ΓÇó 2023</p>
+                            </div>
+                        </div>
+
+                        <!-- Cert 7 -->
+                        <div class="cert-badge border bg-white rounded-2xl shadow-sm border border-black/5 p-6 flex items-start gap-4 scroll-animate group">
+                            <div class="w-10 h-10 bg-black/5 border border-black/10 flex items-center justify-center shrink-0 group-hover:bg-black/10 transition-colors">
+                                <span class="iconify text-[#515154]" data-icon="mdi:translate" data-width="20"></span>
+                            </div>
+                            <div>
+                                <p class="text-sm font-medium text-black">TOEFL</p>
+                                <p class="text-xs text-[#86868b] mt-1">UPT Bahasa Politeknik Negeri Tanah Laut ΓÇó 2023</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- BNSP Highlight -->
+                    <div class="mt-12 border border-[#0066cc]/10 bg-[#0066cc]/[0.03] p-8 scroll-animate">
+                        <div class="flex items-start gap-4">
+                            <div class="w-16 h-16 border border-[#0066cc]/20 flex items-center justify-center shrink-0 pulse-glow">
+                                <span class="iconify text-[#0066cc]" data-icon="mdi:award-outline" data-width="32"></span>
+                            </div>
+                            <div>
+                                <h3 class="font-syne text-lg font-medium text-[#0071e3]">4├ù BNSP Certified</h3>
+                                <p class="text-sm text-[#515154] leading-relaxed mt-2">Memiliki empat sertifikasi kompetensi dari Badan Nasional Sertifikasi Profesi (BNSP) yang membuktikan kompetensi di bidang jaringan komputer, dari level teknisi muda hingga network designer.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-20 md:py-32 relative border-t bg-white rounded-2xl shadow-sm border border-black/5">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-12">
+                <div class="md:col-span-1">
+                    <p class="text-xs uppercase tracking-[0.3em] text-[#86868b] flex items-center gap-3 sticky top-24">
+                        <span class="w-8 h-px bg-[#0066cc]"></span>
+                        Pendidikan
+                    </p>
+                </div>
+                <div class="md:col-span-3">
+                    <h2 class="font-syne text-3xl md:text-5xl font-medium tracking-tight mb-16 scroll-animate">
+                        Latar belakang <span class="text-[#0066cc]">akademik</span>
+                    </h2>
+
+                    <!-- Education 1 -->
+                    <div class="border bg-white rounded-2xl shadow-sm border border-black/5 p-8 md:p-10 mb-6 card-hover scroll-animate group">
+                        <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
+                            <div class="flex-1">
+                                <div class="flex items-center gap-3 mb-3">
+                                    <div class="w-10 h-10 bg-[#0066cc]/10 border border-[#0066cc]/20 flex items-center justify-center">
+                                        <span class="iconify text-[#0066cc]" data-icon="mdi:school" data-width="20"></span>
+                                    </div>
+                                    <span class="text-xs text-[#0071e3] uppercase tracking-widest bg-[#0066cc]/10 px-3 py-1">Cum Laude</span>
+                                </div>
+                                <h3 class="font-syne text-xl md:text-2xl font-medium">Politeknik Negeri Tanah Laut</h3>
+                                <p class="text-sm text-[#515154] mt-2">D4 Teknik Informatika ΓÇö Prodi Teknologi Rekayasa Komputer Jaringan</p>
+                            </div>
+                            <div class="text-right shrink-0">
+                                <p class="text-sm text-[#86868b] font-mono">2021 ΓÇô 2025</p>
+                                <p class="font-syne text-3xl font-medium text-[#0066cc] mt-2">3.51</p>
+                                <p class="text-xs text-[#86868b]">IPK</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Education 2 -->
+                    <div class="border bg-white rounded-2xl shadow-sm border border-black/5 p-8 md:p-10 card-hover scroll-animate group">
+                        <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
+                            <div class="flex-1">
+                                <div class="flex items-center gap-3 mb-3">
+                                    <div class="w-10 h-10 bg-black/5 border border-black/10 flex items-center justify-center">
+                                        <span class="iconify text-[#515154]" data-icon="mdi:book-education-outline" data-width="20"></span>
+                                    </div>
+                                </div>
+                                <h3 class="font-syne text-xl md:text-2xl font-medium">Pondok Pesantren Al Falah Putera</h3>
+                                <p class="text-sm text-[#515154] mt-2">PKBM Angkasa (Paket C) ΓÇö Jurusan IPS</p>
+                            </div>
+                            <div class="text-right shrink-0">
+                                <p class="text-sm text-[#86868b] font-mono">2014 ΓÇô 2021</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services / What I Can Do Section -->
+    <section class="py-20 md:py-32 relative border-t bg-white rounded-2xl shadow-sm border border-black/5">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
+            <div class="text-center mb-16">
+                <p class="text-xs uppercase tracking-[0.3em] text-[#86868b] flex items-center justify-center gap-3 mb-6 scroll-animate">
+                    <span class="w-8 h-px bg-[#0066cc]"></span>
+                    Layanan
+                    <span class="w-8 h-px bg-[#0066cc]"></span>
+                </p>
+                <h2 class="font-syne text-3xl md:text-5xl font-medium tracking-tight scroll-animate">
+                    Apa yang bisa saya <span class="text-[#0066cc]">bantu</span>?
+                </h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="border bg-white rounded-2xl shadow-sm border border-black/5 p-8 card-hover scroll-animate group">
+                    <div class="w-14 h-14 border border-[#0066cc]/20 flex items-center justify-center mb-6 group-hover:bg-[#0066cc]/10 transition-colors duration-500">
+                        <span class="iconify text-[#0066cc]" data-icon="mdi:lan" data-width="28"></span>
+                    </div>
+                    <h3 class="font-syne text-lg font-medium mb-3">Instalasi & Konfigurasi Jaringan</h3>
+                    <p class="text-sm text-[#515154] leading-relaxed">Pemasangan jaringan wired (UTP/Fiber Optic) dan wireless, konfigurasi router Mikrotik/Cisco, serta setup load balancing untuk optimalisasi bandwidth.</p>
+                </div>
+
+                <div class="border bg-white rounded-2xl shadow-sm border border-black/5 p-8 card-hover scroll-animate group">
+                    <div class="w-14 h-14 border border-[#0066cc]/20 flex items-center justify-center mb-6 group-hover:bg-[#0066cc]/10 transition-colors duration-500">
+                        <span class="iconify text-[#0066cc]" data-icon="mdi:cctv" data-width="28"></span>
+                    </div>
+                    <h3 class="font-syne text-lg font-medium mb-3">CCTV & Keamanan</h3>
+                    <p class="text-sm text-[#515154] leading-relaxed">Pemasangan dan konfigurasi sistem CCTV di titik-titik strategis, termasuk setup monitoring remote dan integrasi dengan jaringan yang ada.</p>
+                </div>
+
+                <div class="border bg-white rounded-2xl shadow-sm border border-black/5 p-8 card-hover scroll-animate group">
+                    <div class="w-14 h-14 border border-[#0066cc]/20 flex items-center justify-center mb-6 group-hover:bg-[#0066cc]/10 transition-colors duration-500">
+                        <span class="iconify text-[#0066cc]" data-icon="mdi:server-security" data-width="28"></span>
+                    </div>
+                    <h3 class="font-syne text-lg font-medium mb-3">Server & Infrastruktur IT</h3>
+                    <p class="text-sm text-[#515154] leading-relaxed">Setup dan manajemen server Linux/Windows, virtualisasi dengan Proxmox, implementasi Nextcloud, serta troubleshooting infrastruktur IT.</p>
+                </div>
+
+                <div class="border bg-white rounded-2xl shadow-sm border border-black/5 p-8 card-hover scroll-animate group">
+                    <div class="w-14 h-14 border border-[#0066cc]/20 flex items-center justify-center mb-6 group-hover:bg-[#0066cc]/10 transition-colors duration-500">
+                        <span class="iconify text-[#0066cc]" data-icon="mdi:web" data-width="28"></span>
+                    </div>
+                    <h3 class="font-syne text-lg font-medium mb-3">Pengembangan Aplikasi Web</h3>
+                    <p class="text-sm text-[#515154] leading-relaxed">Pembuatan aplikasi berbasis web menggunakan Python, HTML, CSS, dan JavaScript untuk kebutuhan bisnis dan otomasi proses.</p>
+                </div>
+
+                <div class="border bg-white rounded-2xl shadow-sm border border-black/5 p-8 card-hover scroll-animate group">
+                    <div class="w-14 h-14 border border-[#0066cc]/20 flex items-center justify-center mb-6 group-hover:bg-[#0066cc]/10 transition-colors duration-500">
+                        <span class="iconify text-[#0066cc]" data-icon="mdi:chip" data-width="28"></span>
+                    </div>
+                    <h3 class="font-syne text-lg font-medium mb-3">Implementasi IoT</h3>
+                    <p class="text-sm text-[#515154] leading-relaxed">Integrasi teknologi Internet of Things untuk solusi smart home, smart office, atau otomasi industri yang terhubung dengan jaringan.</p>
+                </div>
+
+                <div class="border bg-white rounded-2xl shadow-sm border border-black/5 p-8 card-hover scroll-animate group">
+                    <div class="w-14 h-14 border border-[#0066cc]/20 flex items-center justify-center mb-6 group-hover:bg-[#0066cc]/10 transition-colors duration-500">
+                        <span class="iconify text-[#0066cc]" data-icon="mdi:wrench-outline" data-width="28"></span>
+                    </div>
+                    <h3 class="font-syne text-lg font-medium mb-3">Troubleshooting & Support</h3>
+                    <p class="text-sm text-[#515154] leading-relaxed">Diagnosa dan perbaikan masalah jaringan, dukungan teknis IT harian, serta maintenance perangkat keras dan perangkat lunak.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 md:py-32 relative border-t bg-white rounded-2xl shadow-sm border border-black/5">
+        <div class="absolute inset-0 dot-grid opacity-15"></div>
+        <div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-20 relative z-10">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-12">
+                <div class="md:col-span-1">
+                    <p class="text-xs uppercase tracking-[0.3em] text-[#86868b] flex items-center gap-3 sticky top-24">
+                        <span class="w-8 h-px bg-[#0066cc]"></span>
+                        Kontak
+                    </p>
+                </div>
+                <div class="md:col-span-3">
+                    <h2 class="font-syne text-3xl md:text-5xl font-medium tracking-tight mb-6 scroll-animate">
+                        Mari <span class="text-[#0066cc]">bekerja</span> bersama
+                    </h2>
+                    <p class="text-[#515154] text-sm md:text-base leading-relaxed max-w-xl mb-16 scroll-animate">
+                        Tertarik dengan layanan saya? Jangan ragu untuk menghubungi saya melalui salah satu kanal berikut. Saya siap membantu kebutuhan infrastruktur jaringan dan IT Anda.
+                    </p>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-16">
+                        <!-- Email -->
+                        <a href="mailto:plhr909@gmail.com" class="border bg-white rounded-2xl shadow-sm border border-black/5 p-6 card-hover scroll-animate group flex items-center gap-4">
+                            <div class="w-12 h-12 border border-[#0066cc]/20 flex items-center justify-center group-hover:bg-[#0066cc]/10 transition-colors duration-500 shrink-0">
+                                <span class="iconify text-[#0066cc]" data-icon="mdi:email-outline" data-width="22"></span>
+                            </div>
+                            <div>
+                                <p class="text-xs text-[#86868b] uppercase tracking-widest">Email</p>
+                                <p class="text-sm text-black mt-1">plhr909@gmail.com</p>
+                            </div>
+                        </a>
+
+                        <!-- Phone -->
+                        <a href="tel:+6281348812407" class="border bg-white rounded-2xl shadow-sm border border-black/5 p-6 card-hover scroll-animate group flex items-center gap-4">
+                            <div class="w-12 h-12 border border-[#0066cc]/20 flex items-center justify-center group-hover:bg-[#0066cc]/10 transition-colors duration-500 shrink-0">
+                                <span class="iconify text-[#0066cc]" data-icon="mdi:phone-outline" data-width="22"></span>
+                            </div>
+                            <div>
+                                <p class="text-xs text-[#86868b] uppercase tracking-widest">Telepon</p>
+                                <p class="text-sm text-black mt-1">+62 813-4881-2407</p>
+                            </div>
+                        </a>
+
+                        <!-- WhatsApp -->
+                        <a href="https://wa.me/6281348812407" target="_blank" rel="noopener noreferrer" class="border bg-white rounded-2xl shadow-sm border border-black/5 p-6 card-hover scroll-animate group flex items-center gap-4">
+                            <div class="w-12 h-12 border border-[#0066cc]/20 flex items-center justify-center group-hover:bg-[#0066cc]/10 transition-colors duration-500 shrink-0">
+                                <span class="iconify text-[#0066cc]" data-icon="mdi:whatsapp" data-width="22"></span>
+                            </div>
+                            <div>
+                                <p class="text-xs text-[#86868b] uppercase tracking-widest">WhatsApp</p>
+                                <p class="text-sm text-black mt-1">+62 813-4881-2407</p>
+                            </div>
+                        </a>
+
+                        <!-- LinkedIn -->
+                        <a href="https://www.linkedin.com/in/m-farid-hafizh/" target="_blank" rel="noopener noreferrer" class="border bg-white rounded-2xl shadow-sm border border-black/5 p-6 card-hover scroll-animate group flex items-center gap-4">
+                            <div class="w-12 h-12 border border-[#0066cc]/20 flex items-center justify-center group-hover:bg-[#0066cc]/10 transition-colors duration-500 shrink-0">
+                                <span class="iconify text-[#0066cc]" data-icon="mdi:linkedin" data-width="22"></span>
+                            </div>
+                            <div>
+                                <p class="text-xs text-[#86868b] uppercase tracking-widest">LinkedIn</p>
+                                <p class="text-sm text-black mt-1">M. Farid Hafizh</p>
+                            </div>
+                        </a>
+
+                        <!-- Location -->
+                        <div class="border bg-white rounded-2xl shadow-sm border border-black/5 p-6 card-hover scroll-animate group flex items-center gap-4">
+                            <div class="w-12 h-12 border border-[#0066cc]/20 flex items-center justify-center group-hover:bg-[#0066cc]/10 transition-colors duration-500 shrink-0">
+                                <span class="iconify text-[#0066cc]" data-icon="mdi:map-marker-outline" data-width="22"></span>
+                            </div>
+                            <div>
+                                <p class="text-xs text-[#86868b] uppercase tracking-widest">Lokasi</p>
+                                <p class="text-sm text-black mt-1">Tanah Laut, Kalsel</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CTA -->
+                    <div class="border border-[#0066cc]/10 bg-[#0066cc]/[0.03] p-8 md:p-12 text-center scroll-animate">
+                        <h3 class="font-syne text-2xl md:text-3xl font-medium mb-4">Siap memulai proyek Anda?</h3>
+                        <p class="text-sm text-[#515154] mb-8 max-w-md mx-auto">Hubungi saya sekarang untuk konsultasi gratis dan diskusi lebih lanjut mengenai kebutuhan IT Anda.</p>
+                        <a href="mailto:plhr909@gmail.com" class="group inline-flex items-center gap-3 px-8 py-4 bg-[#0066cc] text-white text-xs uppercase tracking-widest font-medium hover:bg-white hover:text-black transition-all duration-300">
+                            Kirim Email
+                            <span class="iconify group-hover:translate-x-1 transition-transform" data-icon="mdi:arrow-right" data-width="16"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t bg-white rounded-2xl shadow-sm border border-black/5">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
+            <div class="py-8 flex flex-col md:flex-row items-center justify-between gap-4">
+                <div class="flex items-center gap-6">
+                    <a href="#hero" class="font-syne font-bold text-lg tracking-tight">
+                        <span class="text-[#0066cc]">M</span>FH<span class="text-[#0066cc]">.</span>
+                    </a>
+                    <p class="text-xs text-[#86868b]">┬⌐ 2025 Muhammad Farid Hafizh. All rights reserved.</p>
+                </div>
+                <div class="flex items-center gap-4">
+                    <a href="https://www.linkedin.com/in/m-farid-hafizh/" target="_blank" rel="noopener noreferrer" class="w-9 h-9 border bg-white rounded-2xl shadow-sm border border-black/5 flex items-center justify-center hover:border-[#0066cc]/30 hover:bg-[#0066cc]/10 transition-all duration-300">
+                        <span class="iconify text-[#515154] hover:text-[#0066cc]" data-icon="mdi:linkedin" data-width="18"></span>
+                    </a>
+                    <a href="mailto:plhr909@gmail.com" class="w-9 h-9 border bg-white rounded-2xl shadow-sm border border-black/5 flex items-center justify-center hover:border-[#0066cc]/30 hover:bg-[#0066cc]/10 transition-all duration-300">
+                        <span class="iconify text-[#515154] hover:text-[#0066cc]" data-icon="mdi:email-outline" data-width="18"></span>
+                    </a>
+                    <a href="https://wa.me/6281348812407" target="_blank" rel="noopener noreferrer" class="w-9 h-9 border bg-white rounded-2xl shadow-sm border border-black/5 flex items-center justify-center hover:border-[#0066cc]/30 hover:bg-[#0066cc]/10 transition-all duration-300">
+                        <span class="iconify text-[#515154] hover:text-[#0066cc]" data-icon="mdi:whatsapp" data-width="18"></span>
+                    </a>
+                    <a href="tel:+6281348812407" class="w-9 h-9 border bg-white rounded-2xl shadow-sm border border-black/5 flex items-center justify-center hover:border-[#0066cc]/30 hover:bg-[#0066cc]/10 transition-all duration-300">
+                        <span class="iconify text-[#515154] hover:text-[#0066cc]" data-icon="mdi:phone-outline" data-width="18"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button id="back-to-top" class="fixed bottom-6 right-6 w-11 h-11 bg-[#0066cc]/10 border border-[#0066cc]/20 flex items-center justify-center z-40 opacity-0 translate-y-4 transition-all duration-300 hover:bg-[#0066cc]/20">
+        <span class="iconify text-[#0066cc]" data-icon="mdi:chevron-up" data-width="22"></span>
+    </button>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        let menuOpen = false;
+
+        mobileMenuBtn.addEventListener('click', () => {
+            menuOpen = !menuOpen;
+            mobileMenu.classList.toggle('hidden');
+            mobileMenuBtn.innerHTML = menuOpen
+                ? '<span class="iconify" data-icon="mdi:close" data-width="24"></span>'
+                : '<span class="iconify" data-icon="mdi:menu" data-width="24"></span>';
+        });
+
+        // Close mobile menu on nav click
+        document.querySelectorAll('.mobile-nav').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                menuOpen = false;
+                mobileMenuBtn.innerHTML = '<span class="iconify" data-icon="mdi:menu" data-width="24"></span>';
+            });
+        });
+
+        // Navbar Background on Scroll
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('glass');
+                navbar.style.padding = '5px 0';
+            } else {
+                navbar.classList.remove('glass');
+                navbar.style.padding = '0';
+            }
+        });
+
+        // Scroll Animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const scrollObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-entry');
+                    scrollObserver.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.scroll-animate').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.filter = 'blur(5px)';
+            scrollObserver.observe(el);
+        });
+
+        // Skill Bar Animation
+        const skillObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const bars = entry.target.querySelectorAll('.skill-bar');
+                    bars.forEach((bar, index) => {
+                        setTimeout(() => {
+                            bar.style.width = bar.dataset.width;
+                        }, index * 150);
+                    });
+                    skillObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.3 });
+
+        document.querySelectorAll('.card-hover').forEach(card => {
+            if (card.querySelector('.skill-bar')) {
+                skillObserver.observe(card);
+            }
+        });
+
+        // Active Navigation Highlight
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                if (window.scrollY >= sectionTop) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('nav-active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('nav-active');
+                }
+            });
+        });
+
+        // Back to Top Button
+        const backToTop = document.getElementById('back-to-top');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 600) {
+                backToTop.style.opacity = '1';
+                backToTop.style.transform = 'translateY(0)';
+            } else {
+                backToTop.style.opacity = '0';
+                backToTop.style.transform = 'translateY(16px)';
+            }
+        });
+
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Counter Animation for Stats
+        const statObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const statEls = entry.target.querySelectorAll('.font-syne.text-2xl, .font-syne.text-3xl');
+                    statEls.forEach(el => {
+                        const text = el.textContent;
+                        const num = parseFloat(text);
+                        const suffix = text.replace(/[\d.]/g, '');
+                        const isDecimal = text.includes('.');
+                        let start = 0;
+                        const duration = 1500;
+                        const startTime = performance.now();
+
+                        function animate(currentTime) {
+                            const elapsed = currentTime - startTime;
+                            const progress = Math.min(elapsed / duration, 1);
+                            const eased = 1 - Math.pow(1 - progress, 3);
+                            const current = start + (num - start) * eased;
+
+                            if (isDecimal) {
+                                el.textContent = current.toFixed(2) + suffix;
+                            } else {
+                                el.textContent = Math.round(current) + suffix;
+                            }
+
+                            if (progress < 1) {
+                                requestAnimationFrame(animate);
+                            }
+                        }
+                        requestAnimationFrame(animate);
+                    });
+                    statObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        const heroStats = document.querySelector('#hero .grid');
+        if (heroStats) statObserver.observe(heroStats);
+
+        // Dark Mode Toggle Logic
+        const darkModeToggle = document.getElementById('dark-mode-toggle');
+        const darkModeToggleMobile = document.getElementById('dark-mode-toggle-mobile');
+        const body = document.body;
+        const darkModeIcons = document.querySelectorAll('.dark-mode-icon');
+
+        function updateDarkModeIcons(isDark) {
+            darkModeIcons.forEach(icon => {
+                icon.setAttribute('data-icon', isDark ? 'mdi:white-balance-sunny' : 'mdi:moon-outline');
+            });
+        }
+
+        function toggleDarkMode() {
+            const isDark = body.classList.toggle('dark-mode');
+            localStorage.setItem('theme', isDark ? 'dark' : 'light');
+            updateDarkModeIcons(isDark);
+        }
+
+        if (darkModeToggle) darkModeToggle.addEventListener('click', toggleDarkMode);
+        if (darkModeToggleMobile) darkModeToggleMobile.addEventListener('click', toggleDarkMode);
+
+        // Check for saved theme or system preference
+        const savedTheme = localStorage.getItem('theme');
+        const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+        if (savedTheme === 'dark' || (!savedTheme && systemPrefersDark)) {
+            body.classList.add('dark-mode');
+            updateDarkModeIcons(true);
+        }
+    </script>
+</body>
+</html>
